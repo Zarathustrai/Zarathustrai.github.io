@@ -1,0 +1,214 @@
+:root {
+  --light: 45 100% 85%;
+  --medium: 42 100% 50%;
+  --dark: 26 100% 50%;
+}
+
+html {
+  min-height: 100%;
+  height: auto;
+  background: hsl(var(--light) / .2);
+}
+
+.App {
+  display: grid;
+  grid-template-rows: auto auto 1fr;
+  font-family: verdana, arial;
+  scroll-behavior: smooth;
+}
+
+.app-header {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  grid-gap: 1rem;
+  background: linear-gradient(to bottom, hsl(var(--dark)) , hsl(var(--medium)) 20%);
+}
+
+.app-header > * {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+}
+
+.top-left {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+}
+
+.top-left-button {
+  background-image: url("./logo192.png");
+  background-size: 150% 150%;
+  background-position: center;
+  width: 4rem;
+  aspect-ratio: 1 / 1;
+  border: 2px solid gray;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: white;
+}
+
+
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  justify-items: stretch;
+  align-items: stretch;
+  justify-content: center;
+  align-content: stretch;
+  gap: 4em;
+  padding: 1em;
+}
+
+
+.inputs {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  padding: 1em;
+  gap: 1em;
+  border: 2px solid black;
+}
+.inputs * {
+  border-radius: 10px;
+  border: 2px solid black;
+}
+
+.cards {
+  /*sets the container as a grid with variable number of columns*/
+  width: calc(100% - 2em);
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem,1fr));
+  grid-gap: 3em;
+  margin:1em 0 3em;
+  justify-items: center;
+
+  padding: 1em;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: stretch;
+  padding: 1em;
+  min-height: 10rem;
+  max-height: 20rem;
+  width: 15rem;
+  border: 2px solid black;
+  border-radius: 10px;
+
+  background: white;
+  overflow-y: auto;
+  scrollbar-width: thin; /* firefox only */
+  scrollbar-style: rounded; /* firefox only */
+}
+/* no firefox only \/\/\/*/
+.card::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+.card::-webkit-scrollbar-track {
+  background-color: transparent;
+  border-radius: 10px;
+}
+.card::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+}
+
+.beer {
+  background-position: center;
+  background-size: cover;
+  padding-top: 56.25%;
+  width: 15rem;
+  border-radius: 10px;
+  height: auto;
+}
+
+img {
+  margin-top: -56.25%;
+  position: relative;
+  width: 100%;
+  object-fit: contain;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .top-left-button {
+    position: relative;
+    /*animation: App-logo-spin infinite 20s linear;*/
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+    transition: transform 0.5s ease;
+  }
+  .top-left-button:hover {
+    transform: scale(1.2);
+    transition: transform 0.5s ease;
+  }
+  .top-left-button::before {
+    /* Position the pseudo-element. */
+    content: ' ';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: 50%;
+    /* Create the box shadow at expanded size. */
+    box-shadow: 0 10px 50px 0 rgba(0, 0, 0, 0.5);
+    /* Hidden by default. */
+    opacity: 0;
+    transition: opacity .5s;
+  }
+  .top-left-button:hover::before {
+    /* Show the pseudo-element on hover. */
+    opacity: 1;
+  }
+
+
+  .card {
+    --timing: .5s;
+    display: flex;
+    flex-direction: column;
+
+    transform: scale(1);
+    box-shadow: 0 0 1em .1em rgba(0, 0, 0, 0.1);
+    transition: transform var(--timing) ease, box-shadow var(--timing);
+  }
+  .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 1em .1em rgba(0, 0, 0, 0.5);
+    transition: transform var(--timing) ease, box-shadow var(--timing);
+  }
+}
+
+.BeerForm {
+  display: grid;
+  flex-direction: row;
+  gap: 1em;
+}
+.BeerForm > *:not(:nth-last-child(-n+2)) {
+  text-align: left;
+  border-radius: 5px;
+  border: 2px solid grey;
+}
+.BeerForm > textarea {
+  min-height: 8ch;
+  max-height: 30ch;
+  min-width: 12ch;
+  max-width: 30ch;
+}
