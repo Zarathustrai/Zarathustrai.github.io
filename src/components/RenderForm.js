@@ -5,17 +5,12 @@ export default class RenderForm extends React.Component {
   constructor (props) {
     super(props);
     this.state = {
-      deleteBeer: true
+      deleteBeer: false
     };
   }
 
-  componentDidMount() {
-    this.setState({
-      deleteBeer: false
-    });
-  }
-
   handleChange = event => {
+    event.preventDefault();
     this.setState({
       deleteBeer: !this.state.deleteBeer
     });

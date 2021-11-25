@@ -29,40 +29,71 @@ export default class Form extends React.Component {
 
   handleSubmit = event => {
     event.preventDefault();
-
     const url = "http://localhost:3000/beers";
     const isValid = this.validate();
-    if (isValid) {
-      //Add to JSON
-      var data = {           //add data
-        name: this.state.name,
-        abv: this.state.ABV,
-        flavours: this.state.flav,
-        description: this.state.desc,
-        imagesrc: this.state.file
-      };
 
-      data = JSON.stringify(data);
+    if (!this.props.deleteBeer) {
+      if (isValid) {
+        //Add to JSON
+        var data = {           //add data
+          name: this.state.name,
+          abv: this.state.ABV,
+          flavours: this.state.flav,
+          description: this.state.desc,
+          imagesrc: this.state.file
+        };
 
-      console.log(data);
+        data = JSON.stringify(data);
 
-      var xhr = new XMLHttpRequest();
-      xhr.open("POST", url);
+        console.log(data);
 
-      xhr.setRequestHeader("Accept", "application/json");
-      xhr.setRequestHeader("Content-Type", "application/json");
+        var xhr = new XMLHttpRequest();
+        xhr.open("POST", url);
 
-      xhr.onreadystatechange = function () {
-         if (xhr.readyState === 4) {
-            console.log(xhr.status);
-            console.log(xhr.responseText);
-         }};
-      xhr.send(data);
+        xhr.setRequestHeader("Accept", "application/json");
+        xhr.setRequestHeader("Content-Type", "application/json");
 
+        xhr.onreadystatechange = function () {
+           if (xhr.readyState === 4) {
+              console.log(xhr.status);
+              console.log(xhr.responseText);
+           }};
+        xhr.send(data);
+      }
+    } else {
+      if (isValid) {
+        //Add to JSON
+        var data = {           //add data
+          name: this.state.name,
+          abv: this.state.ABV,
+          flavours: this.state.flav,
+          description: this.state.desc,
+          imagesrc: this.state.file
+        };
 
-      //clear form
-      this.setState(initialState);
+        data = JSON.stringify(data);
+
+        console.log(data);
+
+        var xhr = new XMLHttpRequest();
+        xhr.open("POST", url);
+
+        xhr.setRequestHeader("Accept", "application/json");
+        xhr.setRequestHeader("Content-Type", "application/json");
+
+        xhr.onreadystatechange = function () {
+           if (xhr.readyState === 4) {
+              console.log(xhr.status);
+              console.log(xhr.responseText);
+           }};
+        xhr.send(data);
+      }
     }
+
+
+
+    //clear form
+    this.setState(initialState);
   }
 
   render() {
