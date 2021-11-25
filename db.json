@@ -1,0 +1,20 @@
+{
+  "beers": [
+    {
+      "name": "test",
+      "abv": "test",
+      "flavours": "test",
+      "description": "test",
+      "imagesrc": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2F3zullz2gluko42pll71lt6bh-wpengine.netdna-ssl.com%2Fwp-content%2Fuploads%2F2019%2F05%2Fcraftbeer.jpg&f=1&nofb=1",
+      "id": 4
+    },
+    {
+      "name": "Peterus REd",
+      "abv": "8%",
+      "flavours": "sour",
+      "description": "Delicious mildly sour beer",
+      "imagesrc": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fs3.amazonaws.com%2Fbeertourprod%2Fbeers%2Fpictures%2F000%2F000%2F121%2Foriginal%2FPetrus_Aged_Red_900.jpg%3F1426926104&f=1&nofb=1",
+      "id": 5
+    }
+  ]
+}
