@@ -7,6 +7,7 @@
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
     "concurrently": "^5.3.0",
+    "run-script-os": "^1.1.6",
     "json-server": "^0.17.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
@@ -14,7 +15,10 @@
     "web-vitals": "^1.1.2"
   },
   "scripts": {
-    "start": "concurrently \"json-server --watch db.json\" \"set PORT=3005 && react-scripts start\"",
+    "start": "run-script-os",
+    "start:win32": "concurrently \"json-server --watch db.json\" \"set PORT=3005 && react-scripts start\"",
+    "start:win64": "concurrently \"json-server --watch db.json\" \"set PORT=3005 && react-scripts start\"",
+    "start:macos": "concurrently \"json-server --watch db.json\" \"PORT=3005 react-scripts start\"",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -36,5 +40,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "run-script-os": "^1.1.6"
   }
 }
