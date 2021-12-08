@@ -1,3 +1,7 @@
+<input type="button" onClick={() => setPage("Questions")} value="Questions" name="Questions"/>
+<input type="button" onClick={() => setPage("Analysis")} value="Analysis" name="Analysis"/>
+<input type="button" onClick={() => setPage("About")} value="About" name="About"/>
+
 
   <div className="card">
     <div className="beer"></div>

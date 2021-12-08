@@ -17,22 +17,26 @@ export default class RenderForm extends React.Component {
   };
 
   render() {
-    return (
-      <div>
-        <form>
-          <fieldset className="delete">
-            <legend><b>Delete Beer</b></legend>
-            <input  type="button"
-                    id="deleteBeer"
-                    value={this.state.deleteBeer}
-                    name="deleteBeer"
-                    placeholder="Tick to delete beer"
-                    required
-                    onClick={this.handleChange}/>
-          </fieldset>
-        </form>
-        <Form deleteBeer = {this.state.deleteBeer}/>
-      </div>
-    )
+    if (this.props.isVisible) {
+      return (
+        <div>
+          <form>
+            <fieldset className="delete">
+              <legend><b>Delete Beer</b></legend>
+              <input  type="button"
+                      id="deleteBeer"
+                      value={this.state.deleteBeer}
+                      name="deleteBeer"
+                      placeholder="Tick to delete beer"
+                      required
+                      onClick={this.handleChange}/>
+            </fieldset>
+          </form>
+          <Form isVisible = {1} deleteBeer = {this.state.deleteBeer}/>
+        </div>
+      );
+    } else {
+      return(<Form isVisible = {0} deleteBeer = {this.state.deleteBeer}/>);
+    }
   }
 }

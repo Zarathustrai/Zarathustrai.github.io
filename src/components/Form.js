@@ -1,6 +1,6 @@
 import React from 'react';
 
-// not implemented yet. Troubles with changing json files.
+// delete function not implemented yet
 
 const initialState = {
   name: "",
@@ -97,66 +97,70 @@ export default class Form extends React.Component {
   }
 
   render() {
-    if (this.props.deleteBeer == false) {
-      return (
-        <form key={this.props.deleteBeer} onSubmit={this.handleSubmit}>
-          <fieldset className="BeerForm">
-            <legend><b>Add Beer</b></legend>
-            <input  type="text"
-                    id="beerName"
-                    value={this.state.name}
-                    name="name"
-                    placeholder="Enter Beer Name"
-                    required
-                    onChange={this.handleChange}/>
-            <input  type="text"
-                    id="beerABV"
-                    value={this.state.ABV}
-                    name="ABV"
-                    placeholder="Enter Beer ABV"
-                    required
-                    onChange={this.handleChange}/>
-            <input  type="text"
-                    id="beerFlav"
-                    value={this.state.flav}
-                    name="flav"
-                    placeholder="Enter Beer Flavours"
-                    required
-                    onChange={this.handleChange}/>
-            <textarea
-                    id="beerDesc"
-                    value={this.state.desc}
-                    name="desc"
-                    placeholder="Enter Beer Description"
-                    required
-                    onChange={this.handleChange}/>
-            <input  type="text"
-                    id="beerImage"
-                    value={this.state.file}
-                    name="file"
-                    placeholder="Add Beer Image URL"
-                    required
-                    onChange={this.handleChange}/>
-                    <button type="submit">Submit</button>
-          </fieldset>
-        </form>
-      )
+    if (this.props.isVisible) {
+      if (this.props.deleteBeer == false) {
+        return (
+          <form key={this.props.deleteBeer} onSubmit={this.handleSubmit}>
+            <fieldset className="BeerForm">
+              <legend><b>Add Beer</b></legend>
+              <input  type="text"
+                      id="beerName"
+                      value={this.state.name}
+                      name="name"
+                      placeholder="Enter Beer Name"
+                      required
+                      onChange={this.handleChange}/>
+              <input  type="text"
+                      id="beerABV"
+                      value={this.state.ABV}
+                      name="ABV"
+                      placeholder="Enter Beer ABV"
+                      required
+                      onChange={this.handleChange}/>
+              <input  type="text"
+                      id="beerFlav"
+                      value={this.state.flav}
+                      name="flav"
+                      placeholder="Enter Beer Flavours"
+                      required
+                      onChange={this.handleChange}/>
+              <textarea
+                      id="beerDesc"
+                      value={this.state.desc}
+                      name="desc"
+                      placeholder="Enter Beer Description"
+                      required
+                      onChange={this.handleChange}/>
+              <input  type="text"
+                      id="beerImage"
+                      value={this.state.file}
+                      name="file"
+                      placeholder="Add Beer Image URL"
+                      required
+                      onChange={this.handleChange}/>
+                      <button type="submit">Submit</button>
+            </fieldset>
+          </form>
+        );
+      } else {
+        return (
+          <form key={this.props.deleteBeer}>
+            <fieldset className="delete">
+              <legend><b>Delete Beer</b></legend>
+              <input  type="text"
+                      id="beerName"
+                      value={this.state.name}
+                      name="name"
+                      placeholder="Enter Beer Name"
+                      required
+                      onChange={this.handleChange}/>
+            <button>Delete</button>
+            </fieldset>
+          </form>
+        );
+      }
     } else {
-      return (
-        <form key={this.props.deleteBeer}>
-          <fieldset className="delete">
-            <legend><b>Delete Beer</b></legend>
-            <input  type="text"
-                    id="beerName"
-                    value={this.state.name}
-                    name="name"
-                    placeholder="Enter Beer Name"
-                    required
-                    onChange={this.handleChange}/>
-          <button>Delete</button>
-          </fieldset>
-        </form>
-      )
+      return(null);
     }
   }
 }

@@ -29,7 +29,8 @@ html {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 1em;
+  min-height: 5em;
+  /*padding: 1em;*/
 }
 
 .top-left {
@@ -37,7 +38,7 @@ html {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  gap: 1em;
+  gap: 0em;
 }
 
 .top-left-button {
@@ -50,6 +51,25 @@ html {
   border-radius: 50%;
   cursor: pointer;
   background-color: white;
+}
+
+.nav {
+  display: flex;
+  flex-direction: left;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 2ch;
+  width: 10ch;
+  height: 100%;
+}
+
+.nav:hover {
+  color: hsl(0, 100%, 30%);
+}
+
+.button {
+
 }
 
 
@@ -71,6 +91,9 @@ html {
   justify-content: center;
   align-content: stretch;
   gap: 4em;
+}
+
+.content-padding {
   padding: 1em;
 }
 

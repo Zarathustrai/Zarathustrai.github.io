@@ -47,6 +47,14 @@
       "description": "123",
       "imagesrc": "https://miro.medium.com/max/1200/0*Wr4N602lGquZk5Ec.jpeg",
       "id": 9
+    },
+    {
+      "name": "EXPERT BEER",
+      "abv": "100%",
+      "flavours": "STRONG",
+      "description": "ALKALISCH",
+      "imagesrc": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQltoBh7M78fxT6CWLgOlaO6a6WZeHlfVPRJhQ5lOlip5yaotK2WTho0_ZeIPyMxGX1ANOS0Q8cFkS4ZPF8zhux-Xh7iFnl9g&usqp=CAY",
+      "id": 10
     }
   ]
 }
