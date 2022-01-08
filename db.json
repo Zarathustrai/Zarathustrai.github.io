@@ -5,10 +5,12 @@
       "abv": "5.8%",
       "flavours": [
 		["bitterness", 0.20],
-		["REST OF THE FLAVOURS"]
+		["hoppy"],
+		["light"],
+		["fruity"]
 		],
       "description": "Brewery Het Anker decided to brew an easy drinkable city beer for the Mechelenians, still peppy enough in order to enjoy it to the fullest. We brew a heroic beer called Maneblusser. It’s a blond beer with an alcohol percentage of 6.2% vol. in which you can taste a subtle citrus aroma and a fine finish. Maneblusser is brewed according to the traditional method of high fermentation with refermentation in the bottle. The inspiration for this brew originates in the night of January 27th in the year 1687. The moon projected its reddish glow on Saint Rumbold’s tower, which was wrapped in a dense fog. “Fire, fire, the tower is on fire!” shouts the dreary voice of a drunken man. The alarm was sounded and people were making haste to help extinguish the so-called fire. Before the tower was reached, the moon slowly moved through the fog. From that moment on, the Mechelenians are called the Maneblussers or “Moonextinguishers”. ",
-      "imagesrc": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fs3.amazonaws.com%2Fbeertourprod%2Fbeers%2Fpictures%2F000%2F000%2F121%2Foriginal%2FPetrus_Aged_Red_900.jpg%3F1426926104&f=1&nofb=1",
+      "imagesrc": "https://untappd.akamaized.net/photos/2022_01_07/88324a213248c8aa8c6829a1af02216c_1280x1280.jpg",
       "id": 1
     },
     {
