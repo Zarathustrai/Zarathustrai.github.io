@@ -1,57 +1,1096 @@
 {
   "beers": [
     {
-      "name": "Maneblusser",
-      "abv": "5.8%",
+      "name": "Augustijn Blond",
+      "brewery": "Brouwerij Van Steenberge",
+      "abv": "7%",
+      "style": "Blonde",
+      "color": "dark gold brown",
+      "aroma": "light fruity",
       "flavours": [
-		["bitterness", 0.20],
-		["hoppy"],
-		["light"],
-		["fruity"]
-		],
-      "description": "Brewery Het Anker decided to brew an easy drinkable city beer for the Mechelenians, still peppy enough in order to enjoy it to the fullest. We brew a heroic beer called Maneblusser. It’s a blond beer with an alcohol percentage of 6.2% vol. in which you can taste a subtle citrus aroma and a fine finish. Maneblusser is brewed according to the traditional method of high fermentation with refermentation in the bottle. The inspiration for this brew originates in the night of January 27th in the year 1687. The moon projected its reddish glow on Saint Rumbold’s tower, which was wrapped in a dense fog. “Fire, fire, the tower is on fire!” shouts the dreary voice of a drunken man. The alarm was sounded and people were making haste to help extinguish the so-called fire. Before the tower was reached, the moon slowly moved through the fog. From that moment on, the Mechelenians are called the Maneblussers or “Moonextinguishers”. ",
-      "imagesrc": "https://untappd.akamaized.net/photos/2022_01_07/88324a213248c8aa8c6829a1af02216c_1280x1280.jpg",
+        ["bitterness", 0.1],
+        ["sweetness", 0.5],
+        ["fruity"],
+        ["hoppy"]
+      ],
+      "price": 4.80,
+      "description": "Augustijn Blond is a full and rich monastery beer with a dark golden brown colour. A subtle hoppy taste with malty undertones and light notes of vanilla and fruit. The soft finish is quite long and gives you a pleasant bitterness on the tongue.",
+      "imagesrc": "https://lambikstoemper.files.wordpress.com/2015/03/augustijn-blond.jpg",
       "id": 1
     },
     {
-      "name": "test2",
-      "abv": "2%",
-      "flavours": "test",
-      "description": "lorum ipsum",
-      "imagesrc": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F492714%2Fbeer-on-a-table.jpg&f=1&nofb=1",
-      "id": 6
+      "name": "Bolleke de Koninck",
+      "brewery": "Brouwerij De Koninck",
+      "abv": "5.2%",
+      "style": "Blonde",
+      "color": "dark gold brown",
+      "aroma": "hint of caramel",
+      "flavours": [
+        ["bitterness", 0.23],
+        ["slightly sweet"],
+        ["malty"],
+        ["hint of caramel"]
+      ],
+      "price": 4.60,
+      "description": "Bolleke - De Koninck is the city beer of Antwerp. It is brewed in the brewery on the Mechelsesteenweg. Duvel Moortgat took over the brewery and gave the brewery a new impulse. Today the old brewery is a true experience center. De Koninck - better known as Het Bolleke - is a light and tasty beer, which you can quickly order a second glass of. Slightly sweet, malty with a hint of caramel, ending with a refined bitterness. Exactly as it should be.",
+      "imagesrc": "https://untappd.akamaized.net/photos/2021_05_23/88eb2fb1f62053d265e188efce5d5791_640x640.jpg",
+      "id": 2
     },
     {
-      "name": "test2",
-      "abv": "2%",
-      "flavours": "test",
-      "description": "lorum ipsum",
-      "imagesrc": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F492714%2Fbeer-on-a-table.jpg&f=1&nofb=1",
-      "id": 7
+      "name": "brugse Zot",
+      "brewery": "Brouwerij de halve maan",
+      "abv": "6%",
+      "style": "Blonde",
+      "color": "goldenblond",
+      "aroma": "hoppy",
+      "flavours": [
+        ["bitterness", 0.23],
+        ["hoppy"],
+        ["well balanced"],
+        ["malty"]
+      ],
+      "price": "5.40",
+      "description": "Brugse Zot is a goldenblond beer with a rich froth and a fruity flavouring. The beer is brewed with four different kinds of malt and two aromatic varieties of hop which give the beer its unique taste. With an alcochol degrees proof of 6 % Vol it is a well balanced, easy drinking beer with character. Brugse Zot is a natural beer born out of a selection of only the best ingredients. Thanks to the refermentation in the bottle, the beer has a longer natural life.",
+      "imagesrc": "https://untappd.akamaized.net/photos/2022_01_09/d1aed4738b4a16ad0a6d617eb29cdf38_640x640.jpg",
+      "id": 3
     },
     {
-      "name": "test3",
+      "name": "Delerium Tremens",
+      "brewery": "Huyghe Brewery",
+      "abv": "8.5%",
+      "style": "Blonde",
+      "color": "light gold",
+      "aroma": "",
+      "flavours": [
+        ["bitterness", 0.26],
+        ["sweet"],
+        ["biscuit malt backbone"],
+        ["bit of spice"],
+        ["dry"]
+      ],
+      "price": 5.80,
+      "description": "The allusion to pink elephants and the choice of names is not due to chance. With a particular character, the unique taste results from triple fermentation and the use of three different yeast strains. Sweet, biscuit malt backbone, supported by pleasant warmth and spice, finishes well rounded, floral, and dry.",
+      "imagesrc": "https://untappd.akamaized.net/photos/2022_01_10/5262ef69a7c75636ccd3b61251d642ff_640x640.jpg",
+      "id": 4
+    },
+    {
+      "name": "Doggie Style",
+      "brewery": "Flying Dog brewery",
+      "abv": "5.5%",
+      "style": "Blonde",
+      "color": "cloudy gold",
+      "aroma": "hoppy",
+      "flavours": [
+        ["bitterness", 0.35],
+        ["citrus"],
+        ["grassy"]
+      ],
+      "price": 6.80,
+      "description": "Citrus, grassy, and slight perfume hop character balanced with a sweet malt body.",
+      "imagesrc": "https://untappd.akamaized.net/photos/2022_01_09/d1219d8f1a091fb9d4afe744d90b3f3e_640x640.jpg",
+      "id": 5
+    },
+    {
+      "name": "Duvel",
+      "brewery": "Duvel Moortgat",
+      "abv": "8.5%",
+      "style": "Blonde",
+      "color": "light gold",
+      "aroma": "hoppy",
+      "flavours": [
+        ["bitterness", 0.33],
+        ["hoppy"],
+        ["sweet taste of alcohol"]
+      ],
+      "price": 5.20,
+      "description": "Duvel is a natural beer with a subtle bitterness, a refined flavour and a distinctive hop character. The unique brewing process, which takes about 90 days, guarantees a pure character, delicate effervescence and a pleasant sweet taste of alcohol. Apart from pure spring water, which is the main ingredient of beer, barley is the most important raw material. Barley must germinate for five days in the malt house, after which malt remains. The colour of the malt and as a consequence also of the beer is determined by the temperature. Duvel obtains its typical bitterness by adding various varieties of aromatic Slovenian and Czech hops. We use only exclusive hops that are renowned for their constant, outstanding quality. Duvel ferments for the first time in tanks at 20 to 26°C. The brewer uses his own culture for this. The original yeast strain, which Victor Moortgat himself selected in the 1920’s, originates from Scotland. After maturing in storage tanks in which the beer is cooled down to -2°C, the drink is ready for bottling. Thanks to the addition of extra sugars and yeast, the beer ferments again in the bottle. This occurs in warm cellars (24°C) and takes two weeks. Then the beer is moved to cold cellars, where it continues to mature and stabilise for a further six weeks. This extra long maturation period is unique and contributes to the refined flavour and pure taste of Duvel.",
+      "imagesrc": "https://untappd.akamaized.net/photos/2022_01_10/e16434135bba838711d18dd6d7009be7_640x640.jpg",
+      "id": 56
+    },
+    {
+      "name": "Gerardus Blond",
+      "brewery": "Gulpener Bierbrouwerij",
+      "abv": "6.5%",
+      "style": "Blonde",
+      "color": "dark gold",
+      "aroma": "",
+      "flavours": [
+        ["bitterness"],
+        ["light sweet"],
+        ["spciy"]
+      ],
+      "price": 4.80,
+      "description": "Gerardus Blond is een sprankelend bitter kloosterbier met een kruidige smaakaanzet. Specerijen en hop geven dit licht zoete bier zijn rijke, ronde smaakbeleving. We brouwen het op basis van een recept van de paters van het Redemptoristenklooster in Wittem. Een deel van de omzet van Gerardus Blond is bestemd voor het behoud van dit prachtige klooster. Bezoek het eens en kom dan ook naar onze brouwerij voor een proeverij. Gerardus Blond is goed te combineren met gerookte forel, salade, gegrilde kip en steak.",
+      "imagesrc": "https://untappd.akamaized.net/photos/2022_01_09/9326d11a1ef11f7b367ca017f9a719d4_640x640.jpg",
+      "id": 66
+    },
+    {
+      "name": "Kasteel Blond",
+      "brewery": "Kasteel Brouwerij",
+      "abv": "7%",
+      "style": "Blonde",
+      "color": "light gold",
+      "aroma": "malty",
+      "flavours": [
+        ["bitterness"],
+        ["hoppy bitterness"],
+        ["malty"]
+      ],
+      "price": 4.80,
+      "description": "Kasteel Blond is beautifully balanced with hop bitters and malty aromas. The hints of fruit from the yeast are reminiscent of citrus fruits. The beautiful balance makes the beer mild in the aftertaste.",
+      "imagesrc": "https://arthurenco.nl/wp-content/uploads/kasteel-blond-1.jpg",
+      "id": 76
+    },
+    {
+      "name": "La Chouffe Blond",
+      "brewery": "Brasserie d'Achouffe",
+      "abv": "8%",
+      "style": "Blonde",
+      "color": "light gold",
+      "aroma": "",
+      "flavours": [
+        ["bitterness", 0.20],
+        ["slightly hoppy"],
+        ["fresh coriander"],
+        ["fruity tones"]
+      ],
+      "description": "The gnomes of Fairyland are particularly fond of this golden beer. LA CHOUFFE, with its slight hoppy taste, combining notes of fresh coriander and fruity tones, is the drink which gives them their zest for life. At least, that's what these imps say when they are thirsty. Their secret used to be jealously guarded from one generation to the next until the day they shared the recipe with humans to seal their friendship. Of all the legends from the wonderful region of the Belgian Ardennes, the tale of LA CHOUFFE is the one which most merits re-telling.",
+      "price": 5.40,
+      "imagesrc": "https://untappd.akamaized.net/photos/2022_01_10/a594eeac0c799a25d3b9ce53a9647a80_640x640.jpg",
+      "id": 86
+    },
+    {
+      "name": "La Trappe Blond",
+      "brewery": "Bierbrouwerij de Koningshoeven",
+      "abv": "6.5%",
+      "style": "Blonde",
+      "color": "Golden Yellow",
+      "aroma": "fruity",
+      "flavours": [
+        ["bitterness", 0.20],
+        ["bittersweet"],
+        ["malty"]
+      ],
+      "price": 4.80,
+      "description": "Golden yellow Trappist ale with a white head and a rich flavour. The fruity and refreshing aromas go well with the sweet smell of malt and aromas reminiscent of spices. The result is an agreeable and tingling ale with a lightly sweet, smoothly bitter and malty taste. The aftertaste is characterised by a combination of sweetness and smooth bitterness.",
+      "imagesrc": "https://untappd.akamaized.net/photos/2022_01_10/3f87f3356bcb120718448bba8dc15f26_640x640.jpg",
+      "id": 96
+    },
+    {
+      "name": "Pauwel Kwak",
+      "brewery": "Brouwerij Bosteels",
+      "abv": "8.4%",
+      "style": "Blonde",
+      "color": "deep bright amber",
+      "aroma": "fruity and malty",
+      "flavours": [
+        ["bitterness", 0.20],
+        ["slightly spicy"],
+        ["fruity"],
+        ["hints of liquorice"]
+      ],
+      "price": 4.80,
+      "description": "In Napoleon's time Pauwel Kwak was a brewer and the owner of the 'De Hoorn' inn in Dendermonde. Mail coaches stopped there every day. But at that time coachmen were not allowed to leave their coach and horses in order to have their thirst quenched along with their passengers. As a result, the inventive innkeeper had a special Kwak glass blown that could be hung on the coach. In this way the coachman had his Kwak beer safely at hand. LOOK: Kwak is recognisable by its deep bright amber colour and a dense, creamy coloured head. The pale wood of the glass holder makes a pleasant contrast with the beer. SMELL: You will smell a mellow, fruity and malty aroma with a slightly spicy character (coriander, hops). Additional earthy and very subtle aromas of banana and perhaps also a whiff of pineapple or mango in the background. TASTE: Discover a very mellow, fruity attack, a nougat-like solidity, and a slightly spicy character with hints of liquorice passing into a warm finish that reminds you of caramelised banana. The bitterness always remains in the background but in the end emerges delicately.",
+      "imagesrc": "https://slijterij-degraaf.nl/slir/w540-q80/images/1501101289ef88db733ac95bd05247ba89c1c0b79d.jpg",
+      "id": 106
+    },
+    {
+      "name": "Avintinus Eisbock",
+      "brewery": "Schneider Weisse G. Schneider & Sohn",
+      "abv": "12%",
+      "style": "Brown Ale",
+      "color": "mahogany",
+      "aroma": "",
+      "flavours": [
+        ["bitterness", 0.15],
+        ["spicy"],
+        ["bitter almond"],
+        ["marzipan"]
+      ],
+      "price": 7.80,
+      "description": "Magic and a black soul - the mahogany coloured, almost black \"Eisbock\" for sensuous indulgence, best served in a balloon glas. Matured in a special freezing process following a special recipe, with a soft, elegant body, but still intensive. Spicy flavours of plum, banana and clove reveal themselves along with a hint of bitter almond and marzipan. Tempting as digestif, to crepes, dark chocolate, Tiramisu and fully ripe parmesan cheese.",
+      "imagesrc": "https://untappd.akamaized.net/photos/2022_01_10/87624449872e1cd30c7963e788c83af6_640x640.jpg",
+      "id": 116
+    },
+    {
+      "name": "Gouden Carolus Classic",
+      "brewery": "Brouwerij het Anker",
+      "abv": "8.5%",
+      "style": "Dark Ale",
+      "color": "dark",
+      "aroma": "malty",
+      "flavours": [
+        ["bitterness", 0.25],
+        ["dosed caramel"],
+        ["warmth of wine, freshness of beer"]
+      ],
+      "price": 5.40,
+      "description": "Gouden Carolus Classic, the ‘Grand Imperial Beer’ from Mechelen, is brewed with dark, very balanced dosed caramel and aromatic malts. This unique beer combines the warmth of wine and the freshness of beer. This makes it very suitable in combination with culinary specialties such as stews, pâtés, ripened or strong cheeses.\n",
+      "imagesrc": "https://untappd.akamaized.net/photos/2022_01_09/76de9c33d3f454d8bec5af09fd1019ef_640x640.jpg",
+      "id": 126
+    },
+    {
+      "name": "La Trappe Dubbel",
+      "brewery": "Bierbrouwerij De Koningshoeven",
+      "abv": "7%",
+      "style": "Dark Ale",
+      "color": "cloudy dark",
+      "aroma": "fruity",
+      "flavours": [
+        ["bitterness", 0.22],
+        ["malty"],
+        ["bittersweet"]
+      ],
+      "price": 4.80,
+      "description": "A dark-brown Trappist ale with an ivory-coloured head. A fruity aroma with warm tones of vanilla, caramel and roasted chocolate. A classic Trappist ale with a full malty, caramel-sweet taste and the subtle, sweet influence of dates, honey and dried fruits. The aftertaste is sweet and slightly bitter.",
+      "imagesrc": "https://untappd.akamaized.net/photos/2022_01_09/628dfc6a13b4f71438fcc57c20819547_640x640.jpg",
+      "id": 136
+    },
+    {
+      "name": "Westmalle Trappist Dubbel",
+      "brewery": "Brouwerij der Trappisten van Westmalle",
+      "abv": "7%",
+      "style": "Dark Ale",
+      "color": "reddish-brown",
+      "aroma": "malt and leaves",
+      "flavours": [
+        ["bitterness", 0.29],
+        ["herby"],
+        ["fruity"],
+        ["fresh-bitter"]
+      ],
+      "price": 4.80,
+      "description": "Westmalle Dubbel is a dark, reddish-brown Trappist beer with a secondary fermentation in the bottle. The creamy head has the fragrance of special malt and leaves an attractive lace pattern in the glass. The flavour is rich and complex, herby and fruity with a fresh-bitter finish. It is a balanced quality beer with a soft feel in the mouth and a long, dry aftertaste. The Dubbel contains 7% alcohol.",
+      "imagesrc": "https://www.trollekelder.be/cafe/wp-content/uploads/2013/06/westmalle-dubbel-300x300.jpg",
+      "id": 146
+    },
+    {
+      "name": " Trappistes Rochefort 8",
+      "brewery": "Abbaye Notre-Dame de Saint-Rémy",
+      "abv": "9.2%",
+      "style": "Dark Ale",
+      "color": "Deep brown",
+      "aroma": "fresh fruits and spicy",
+      "flavours": [
+        ["bitterness", 0.22],
+        ["chocolatey"],
+        ["complex"],
+        ["sweet"]
+      ],
+      "price": 5.60,
+      "description": "Originally called \"Spécial,\" Rochefort 8 dates to the mid-1950s. The name comes from the original gravity in \"Belgian degrees.\"\n\nDeep brown color; the flavor is vigorous and complex, with firm body to support the strength. The aroma has elusive notes of fresh fruit, spice, leather, and figs.",
+      "imagesrc": "https://static.specsonline.com/wp-content/uploads/2020/06/069917631751.jpg",
+      "id": 156
+    },
+    {
+      "name": "Blanche de Namur",
+      "brewery": "Brasserie du Bocq",
+      "abv": "4.5%",
+      "style": "Weizen",
+      "color": "cloudy and milky",
+      "aroma": "Fine fruity",
+      "flavours": [
+        ["bitterness", 0.11],
+        ["mellow"],
+        ["thirst-quenching"],
+        ["slightly acid"]
+      ],
+      "price": 4.20,
+      "description": "\"Cloudy, smooth and mellow, the Blanche de Namur is a very high-quality wheatbeer. From the first sip, you will feel all its roundness and its delicacy that make it an outstanding wheatbeer. Its qualities and the brewery’s know-how earned it the honour of being named the best wheatbeer in the world (2009).\" Description Appearance : Blond, cloudy and milky colour (colloidal turbidity when cold): the cloudiness is created when the beer is cold but can disappear when the beer warms up or is kept in the cold for too long a time. Aroma : Fine fruity, revealing the spices used: coriander and bitter orange. Taste : Mellow beer, thirst-quenching but smooth, slightly acid flavour, powdery consistency on the tongue, not bitter.",
+      "imagesrc": "https://untappd.akamaized.net/photos/2022_01_09/69bfda03df68953fc354926827415cd8_640x640.jpg",
+      "id": 166
+    },
+    {
+      "name": "Erdinger Weißbier / Hefe-Weizen",
+      "brewery": "Erdinger Weissbräu",
+      "abv": "5.3%",
+      "style": "Weizen",
+      "color": "Light gold,amber",
+      "aroma": "Gently spicy wheat and yeast",
+      "flavours": [
+        ["bitterness", 0.13],
+        ["neutral"],
+        ["slight sweetness"],
+        ["spicy"]
+      ],
+      "price": 5.40,
+      "description": "The Premium Weissbier at the top of its class. Not only in the context of the Erdinger assortment Erdinger Weissbier with fine yeast applies undisputed as the classical authors, as the white beer absolutely. It is brewed with fine yeast after a delivered prescription and naturally strictly after the Bavarian purity requirement. Today still without the traditional bottle fermentation one does not do here: Three to four weeks it lasts, until the Erdinger Weissbier with fine yeast matured. For the production only finest raw materials are used. Experience of many years and constant quality controls guarantee beyond that the unmistakable taste. A Weissbier for all, those the unforgettable good taste love.",
+      "imagesrc": "https://untappd.akamaized.net/photos/2022_01_10/2e842cead916d8f027f015fe60a6004d_640x640.jpg",
+      "id": 176
+    },
+    {
+      "name": "Skuumkoppe",
+      "brewery": "Texelse Bierbrouwerij",
+      "abv": "6%",
+      "style": "Weizen",
+      "color": "dark wheat beer",
+      "aroma": "lightly sweet",
+      "flavours": [
+        ["bitterness", 0.16],
+        ["light sweet"],
+        ["Hints of caramel"]
+      ],
+      "price": 4.80,
+      "description": "Texels Skuumkoppe is a top-fermented dark wheat beer, brewed from natural ingredients, including Texel barley. This specialty beer, which takes its name from the white cups on the waves of the sea, is full of flavor with hints of caramel and apricot and has a creamy, slightly sweet aftertaste. Texels Skuumkoppe is a beer that suits every season. A beer pure, robust and straightforward, just like Texel itself.",
+      "imagesrc": "https://images0.persgroep.net/rcs/f_YGHhn4psL6kyh5W_pSfvNHBwo/diocontent/178534049/_fitwidth/694/?appId=21791a8992982cd8da851550a453bd7f&quality=0.8&desiredformat=webp",
+      "id": 186
+    },
+    {
+      "name": "Tokyo",
+      "brewery": "Brouwerij St.Bernardus",
+      "abv": "6%",
+      "style": "Weizen",
+      "color": "cloudy gold",
+      "aroma": "fruity yeast",
+      "flavours": [
+        ["bitterness", 0.15],
+        ["slightly sour"],
+        ["hint of vanilla"]
+      ],
+      "description": "St.Bernardus Tokyo Sounds familiar? You are quite right, because in 2012 we launched a one-off brew on the occasion of the opening of the first St.Bernardus-themed café in the Japanese capital. Eight years later, you can sample our St.Bernardus Tokyo again, albeit with a new recipe! The young Belgian illustrator Jonas Devacht created the artwork for the can, which consists of an impression of Japanese nightlife in the iconic streets of Kanda district, where you can find ‘Brasserie St.Bernardus’. St.Bernardus Tokyo is an unfiltered ale, which has been brewed with a large amount of wheat, holding the middle between a white beer and a saison. St.Bernardus Tokyo is an unfiltered, golden ale, topped off with an impressive white collar. Character, taste, aromas St.Bernardus Tokyo is famed for its hints of citrus, combined with likeable florals of chamomile and fruity yeast aromas of banana and red apple. Attentive beer fans may also detect a hint of clove and vanilla, as well as the typical esters of our unique St.Bernardus yeast. A refreshing beer with a spicy aroma and a slight hint of bitterness and sourness on the back of the palate! A real treat for the more adventurous beer fan.",
+      "price": 5.60,
+      "imagesrc": "https://untappd.akamaized.net/photos/2022_01_10/ed62b7cb4b61f8a917c4000d97844db9_640x640.jpg",
+      "id": 196
+    },
+    {
+      "name": "Kasteel Tripel",
+      "brewery": "Kasteel Brouwerij Vanhonsebrouck",
+      "abv": "11%",
+      "style": "Triple",
+      "color": "cloudy gold",
+      "aroma": "hoppy",
+      "flavours": [
+        ["bitterness", 0.30],
+        ["hoppy"],
+        ["mildly bitter"],
+        ["malty"],
+        ["fruity"]
+      ],
+      "price": 5.60,
+      "description": "Kasteel Tripel is a strong blonde specialty beer brewed with a high proportion of aroma hops. The fruitiness of the hops and the impressions of malt and cloves give the beer character. This triple has a mildly bitter taste and appeals to many beer lovers.",
+      "imagesrc": "https://static.specsonline.com/wp-content/uploads/2020/06/069917631751.jpg",
+      "id": 206
+    },
+    {
+      "name": "Tripel Karmeliet",
+      "brewery": "Brouwerij Bosteels",
+      "abv": "8.4%",
+      "style": "Triple",
+      "color": "cleer, deep, golden",
+      "aroma": "doughy, slightly grainy and caramelly malt ",
+      "flavours": [
+        ["bitterness", 0.16],
+        ["very hoppy"],
+        ["spicy"],
+        ["medium sweetness"]
+      ],
+      "price": 5.20,
+      "description": "Tripel Karmeliet is still brewed to an authentic beer recipe from 1679 originating in the former Carmelite monastery in Dendermonde. Written over 300 years ago, this recipe describes the use of three kinds of grain: wheat, oats and barley. The name Tripel karmeliet thus refers both to its origin and its in-bottle refermentation. From many trial brews of multigrain tripels carried out at our brewery in the 90s, it appears that the particular historic combination of the 3 kinds of grain still remains the ideal blend.",
+      "imagesrc": "https://untappd.akamaized.net/photos/2022_01_10/eacf98c9b04e44ab19bba0b1814852dd_640x640.jpg",
+      "id": 216
+    },
+    {
+      "name": "Westmalle Trappist Tripel",
+      "brewery": "Brouwerij der Trappisten van Westmalle",
+      "abv": "9.5%",
+      "style": "Triple",
+      "color": "pale",
+      "aroma": "fruity and spicy",
+      "flavours": [
+        ["bitterness", 0.36],
+        ["fresh-bitter"],
+        ["fruity"]
+      ],
+      "price": 5.20,
+      "description": "Brouwerij der Trappisten van Westmalle Malle, Vlaanderen\nWas first brewed in 1934 and the recipe has not changed since 1956. It is made with pale candy sugar and has a very pale color produced from a mash of light pilsener malts. Styrian Goldings hops are used along with some German varieties and the classic Saaz pilsener hop. After a long secondary fermentation, the Tripel Westmalle is bottled with a dose of sugar and yeast. This beer holds up well in the bottle over time and seems to soften with age.",
+      "imagesrc": "https://proeflokaalhop.nl/wp-content/uploads/2021/04/Westmalle-Trappist.jpg",
+      "id": 226
+    },
+    {
+      "name": " Val-Dieu Triple",
+      "brewery": "Brasserie de l'Abbaye du Val-Dieu",
+      "abv": "9%",
+      "style": "Triple",
+      "color": "very light brown gold",
+      "aroma": "fruity and a bit spicy",
+      "flavours": [
+        ["bitterness", 0.20],
+        ["soft bitter"],
+        ["hoppy"],
+        ["alcoholic aftertaste"]
+      ],
+      "price": 5.40,
+      "description": "The Val-Dieu Triple is the result of a long fermentation, scrupulously followed by the brewmaster. Its deep yet soft bitterness does not interfer with the discovery of its components. The taste of the hop comes through, naturally aromatized, accompanied by an alcoholic aftertaste. It can be associated with refined dishes and ranks among the great beers. It may be found in the some of the most exclusive restaurants.",
+      "imagesrc": "https://untappd.akamaized.net/photos/2022_01_09/afac1716c83e484ffe25790f6baecabe_640x640.jpg",
+      "id": 236
+    },
+    {
+      "name": "Gouden Carolus Tripel",
+      "brewery": "Brouwerij het Anker",
+      "abv": "9%",
+      "style": "Triple",
+      "color": " hazy straw yellow",
+      "aroma": "yeast",
+      "flavours": [
+        ["bitterness", 0.30],
+        ["mildly spicy"],
+        ["slightly fruity"]
+      ],
+      "description": "Gouden Carolus Tripel was originally brewed for the Knights of the Golden Fleece in 1491. This golden specialty beer is brewed with the best Belgian ripe barley and hops, to preserve as much pure aroma as possible. Ideal with chicken, spicy dishes or fine, soft cheeses. Elected World’s Best Triple (World Beer Awards 2012).",
+      "imagesrc": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Gouden_Carolus_Tripel_33cl_bottle_glass.jpg/399px-Gouden_Carolus_Tripel_33cl_bottle_glass.jpg",
+      "id": 246
+    },
+    {
+      "name": "Gulden Draak 9000 Quadruple",
+      "brewery": "Brouwerij van Steenberge",
+      "abv": "10.5%",
+      "style": "Quadruple",
+      "color": "deep golden amber",
+      "aroma": "slightly fruity",
+      "flavours": [
+        ["bitterness", 0.25],
+        ["slightly sweet"],
+        ["malty"]
+      ],
+      "price": 5.20,
+      "description": "An exceptional quadruple amber. The particularly rich and complex taste palette and the full head are also found in the Gulden Draak 9000 Quadruple. The sweet notes of caramel are, however, reserved for the Gulden Draak Classic. The new recipe based on 4 different malt varieties gives the Gulden Draak 9000 Quadruple a deep golden amber color and a slightly fruity aroma. Together with the soft and slightly sweet taste, this provides a beautifully rounded bouquet with notes of dried fruit. Just like the other specialty beers from Brewery Van Steenberge, Gulden Draak 9000 Quadruple is a high fermentation beer with secondary fermentation. For the secondary fermentation use is made of a wine yeast that not only contributes to the unparalleled taste but also ensures a long-term shelf life with taste evolution.",
+      "imagesrc": "https://untappd.akamaized.net/photos/2022_01_10/da82b46096a1b32832a9581be355310b_640x640.jpg",
+      "id": 256
+    },
+    {
+      "name": " Ongelovige Thomas / Doubting Thomas",
+      "brewery": "Jopen",
+      "abv": "10%",
+      "style": "Quadruple",
+      "color": "reddish-brown",
+      "aroma": "",
+      "flavours": [
+        ["bitterness", 0.40],
+        ["malty"],
+        ["fruity"],
+        ["toffee and caramel"]
+      ],
+      "price": 7.20,
+      "description": "The result of adding American hops to a quadrupel, 10% Jopen Doubting Thomas (aka Ongelovige Thomas) is our interpretation of a quadrupel. A distinct beer with rich malt as the main flavour. The American hops gives it a fruity character. This beer is named after the apostle Thomas, who would not believe that Jesus had risen from the dead. Thomas has his name-day at the start of winter on 21 December. This reddish-brown beer is a genuine winter warmer. Surprisingly rich in flavour and ideal for sipping beside the fireplace. Believe it or not, this is a heavyweight.",
+      "imagesrc": "https://www.bierboomdistributie.nl/image/cache/catalog/Jopen/Jopen-Ongelovige-Thomas-228x228.jpg",
+      "id": 266
+    },
+    {
+      "name": "Trappistes Rochefort 10",
+      "brewery": "Abbaye Notre-Dame de Saint-Rémy",
+      "abv": "11.3%",
+      "style": "Quadruple",
+      "color": "dark brown",
+      "aroma": "chocolate",
+      "flavours": [
+        ["bitterness", 0.22],
+        ["bitter malt"],
+        ["chocolate"]
+      ],
+      "price": 6.40,
+      "description": "Dominant impressions of latte coffee with powerful chocolate aromas in the nose. The alcohol esters are enveloped with hints of autumn wood, citrus zest (orange, lemon) and freshly baked biscuits. The initial taste is sweetly sinful. Beer and chocolate trapped into one single glass, a liquid milky draught with a backbone of bitter malt. The alcohol warms the throat and, in the finish, you will pick up traces of cloves, citrus, orange and mocha. The heaviest of the Rochefort beers, the 10 is a quadrupel style beer and can be recognized by its blue label.",
+      "imagesrc": "https://untappd.akamaized.net/photos/2022_01_11/a43ccb8af4c94972aa521bb3fc332c4a_640x640.jpg",
+      "id": 276
+    },
+    {
+      "name": "Grand Prestige",
+      "brewery": "Hertog Jan",
+      "abv": "10%",
+      "style": "Quadruple",
+      "color": "Dark brown",
+      "aroma": "fruity",
+      "flavours": [
+        ["bitterness", 0.25],
+        ["bitter"],
+        ["sweet"],
+        ["malty"]
+      ],
+      "price": 5.60,
+      "description": "Hertog Jan Grand Prestige is our crown jewel; the pride of the Hertog Jan brewery. For this dark and heavy Hertog Jan beer the special Hertog Jan malt is used: a special mix of four kinds of malt. This gives a rich, full flavor in which sweet and bitter can be distinguished. Hertog Jan Grand Prestige is one of the few beers that can be aged, the taste will become richer with the years. After two years of aging, the taste will start to change. After many years the taste will be similair to a Port wine.",
+      "imagesrc": "https://untappd.akamaized.net/photos/2022_01_10/bf9cba13358bab3e21ba6b49ff3f2f76_640x640.jpg",
+      "id": 286
+    },
+    {
+      "name": "La Trappe Quadrupel",
+      "brewery": "Bierbrouwerij De Koningshoeven",
+      "abv": "10%",
+      "style": "Quadruple",
+      "color": "Warm amber",
+      "aroma": "clover, nuts and vanilla",
+      "flavours": [
+        ["bitterness", 0.22],
+        ["slightly bitter"],
+        ["malty"],
+        ["sweet"]
+      ],
+      "price": 5.20,
+      "description": "A characteristically Trappist ale with a warm amber colour and a cream-coloured head. The aroma is associated with clover and nuts, balanced by the sweet aromas of vanilla, raisins and banana. La Trappe Quadrupel is the heaviest of all the La Trappe Trappist ales and it is also the source for the name of this style. A full, heart-warming and intense taste. Malty with sweet tones of dates and caramel. The aftertaste is smooth and slightly bitter.",
+      "imagesrc": "https://untappd.akamaized.net/photos/2022_01_10/1720f6205624cc589e1dee9b18627b6e_640x640.jpg",
+      "id": 296
+    },
+    {
+      "name": "Bird of Prey IPA",
+      "brewery": "Uiltje Brewing Company",
+      "abv": "5.8%",
+      "style": "IPA",
+      "color": "clear golden",
+      "aroma": "citrus fruits",
+      "flavours": [
+        [
+          "bitterness",
+          0.50
+        ],
+        [
+          "hoppy"
+        ],
+        [
+          "fresh"
+        ],
+        [
+          "fruity"
+        ]
+      ],
+      "price": 6.20,
+      "description": "Is it a bird? Is it a Plane? IT IS…… THE BIRD OF PREY! OMG! What a phenomenon already! A supernatural IPA chock-full of citra, chinook and mosaic hops. One of the many beers Uiltje Brewing is so, so proud of. Always fresh, and always super hoppy. Is the Bird of Prey out of control? You bet your *ss it is! But if you drink it immediately you’ll probably be able to temper it. And if you don’t drink it ASAP you can tame this bionic bird by storing it in a cool dark place. Otherwise it becomes kryptonite! Our feathery friend is the ideal beer for real life superheroes! Do you sometimes feel a bit adventurous? Well, a can of our sublime Bird of Prey is all you need to start off with, and the adventures will follow subsequently. One of our most precious IPA's, or India Pale Ales if you will. A hoppy and yet kick-in-the-face fresh beer, with an ABV percentage of 5.8%. Drink one can of Bird of Prey, and fly off to your next adventure!",
+      "imagesrc": "https://swinkelsfamilybrewers.com/en/our-range/alcoholic-beers/uiltje/uiltje-bird-of-prey/_jcr_content/root/responsivegrid/productinformation/image.coreimg.1024.jpeg/1627907456029.jpeg",
+      "id": 306
+    },
+    {
+      "name": "Dikke Lul 3 Bier!",
+      "brewery": "Uiltje Brewing Company",
+      "abv": "5.6%",
+      "style": "IPA",
+      "color": "yellow",
+      "aroma": "fruity and tropical",
+      "flavours": [
+        ["bitterness", 0.60],
+        ["hoppy"],
+        ["fruity"]
+      ],
+      "price": 6.20,
+      "description": "1-2-3 en tot de 4. Het maakt niet uit, dikke lul drie bier! If you are not from the Netherlands please do not translate the name of this beer! (Obviously you are going to now!) However this extraordinary hoppy pale ale was named after a Dutch and even Haarlem’ saying (found out after we made the beer). Awesome hop forward and dry-ridiculously-hopped American Pale Ale. Light/medium bodied and a lot of dank hops in it. The good stuff",
+      "imagesrc": "https://www.uiltjebrewing.com/app/uploads/2021/03/dikke-lul-3-bier-e1638970164546.jpg",
+      "id": 316
+    },
+    {
+      "name": "Heavy Cross",
+      "brewery": "Jopen",
+      "abv": "10%",
+      "style": "IPA",
+      "color": "clear golden",
+      "aroma": "fruity",
+      "flavours": [
+        ["bitterness", 1.0],
+        ["very bitter"],
+        ["fruity"]
+      ],
+      "price": 8.10,
+      "description": "Tripel madness! Heavily hopped IPA bursting with fresh flavors. You get citrus, pineapple and, tropical fruits from the hops. And watch out for the massive bitterness. It’s a summer fruit explosion! It’s a cruel, cruel world… A Heavy Cross to carry, so you better drink it! Tripel the fruit, tripel the bitterness.",
+      "imagesrc": "https://untappd.akamaized.net/photos/2022_01_10/dacd2a5b78928a257493a4345b44d7bb_640x640.jpg",
+      "id": 326
+    },
+    {
+      "name": "Elvis Juice",
+      "brewery": "BrewDog",
+      "abv": "6,5%",
+      "style": "IPA",
+      "color": "cloudy dark gold",
+      "aroma": "hoppy",
+      "flavours": [
+        ["bitterness", 0.40],
+        ["caramel malt"],
+        ["citrus"]
+      ],
+      "price": 5.40,
+      "description": "An American IPA with a bitter edge that will push your citrus tolerance to the brink and back; Elvis Juice is loaded with tart pithy grapefruit peel. This IPA has a caramel malt base, supporting a full frontal citrus overload - grapefruit peel piled on top of intense U.S. aroma hops. Waves of crashing pine, orange and grapefruit round out this citrus infused IPA. Malts: Cara, Extra Pale Hops: Amarillo, Citra, Magnum, Mosaic, Simcoe",
+      "imagesrc": "https://untappd.akamaized.net/photos/2022_01_11/d0f17313422d9959ffdaa307546bb45a_640x640.jpg",
+      "id": 336
+    },
+    {
+      "name": " Stone Tangerine Express Hazy IPA",
+      "brewery": "Stone Brewing",
+      "abv": "6.7%",
+      "style": "IPA",
+      "color": "slightly haze light golden",
+      "aroma": "fresh fruit",
+      "flavours": [
+        ["bitterness", 0.75],
+        ["hoppy"],
+        ["citrusy"],
+        ["fruity"]
+      ],
+      "price": 5.80,
+      "description": "Formerly known as Stone Tangerine Express IPA. This ain’t no just-add-juice approach. This one is for adults. We use bountiful whole tangerine purée, which brings pithy, crisp bitterness to the citrus flavor. In addition to the complexities of the tangerine — the likes of which you can only get by using the whole fruit — we judiciously employ just a hint of whole pineapple for a backnote (you’d likely not even pick it out of the mix if we didn’t tell you it was there). We’re not looking for a sweet concoction to appease the “I want my beer to taste like fruit juice” crowd. This is Stone. We like our IPAs to taste like IPAs. Big, bold and not for kids.",
+      "imagesrc": "https://brewpublic.com/wp-content/uploads/2020/07/image-of-Stone-Tangerine-Express-Hazy-IPA-courtesy-of-Stone-Brewing.jpg",
+      "id": 346
+    },
+    {
+      "name": "Snake Dog IPA",
+      "brewery": "Flying Dog brewery",
+      "abv": "7.1%",
+      "style": "IPA",
+      "color": "dark yellow",
+      "aroma": "tropical fruits",
+      "flavours": [
+        ["bitterness", 0.60],
+        ["citrus"],
+        ["spicy"]
+      ],
+      "price": 6.60,
+      "description": "A potent snakebite of Citra, Mosaic, Warrior, Simcoe, and Columbus hops (more than 2lbs per barrel) gives this beer its citrus-forward superpower. Orange and tropical fruit aromas temper slightly-piney crispness, turning Snake Dog into a more complex breed of West Coast IPA. You’ll find Snake Dog bites hardest when paired with peppery cheeses, curries, and mild Thai dishes whose names you can’t pronounce properly.",
+      "imagesrc": "https://constructiveconsumption.files.wordpress.com/2013/08/snake-dog-ipa.png",
+      "id": 356
+    },
+
+
+    {
+      "name": "Château Neubourg",
+      "origin": "Gulpen, Limburg",
+      "brewery": "Gulpener Bierbrouwerij",
+      "type": "Pilsner",
+      "price": "3.8",
+      "size": "0.33",
+      "abv": "5.5%",
+      "aroma": "barley",
+      "flavours": [
+		["bitterness", 0.33],
+		["herby"],
+		["acidic"],
+		["blossom"],
+        ["fruity"]
+		],
+      "description": "This is what we call chic beer in the south. Gulpener Château Neubourg has a noble bitterness. A superior Pilsner with character, lifted to great heights by a refined combination of fine herbs and acids, blossom and fruit tones and an aromatic barley structure. And also bottled in a beautiful, stylish bottle. Château Neubourg has been awarded a European Beer Star Award, making it one of the top three in the world. A beer to enjoy exclusively! This beer goes well with shellfish, spring vegetables, asparagus, chicken, salad and fresh salmon. ",
+      "imagesrc": "https://static.ah.nl/static/product/AHI_43545239353637333533_2_LowRes_JPG.JPG?options=399,q85",
+      "id": 111
+    },
+    {
+      "name": "Weihenstephaner Original",
+      "brewery": "Bayerische Staatsbrauerei Weihenstephan",
+      "origin": "Freising, Bayern",
+      "type": "Lager",
+      "size": "0.5",
+      "price": "5.2",
+      "abv": "5.1",
+      "aroma": "spicy",
+      "flavours": [
+        ["bitterness", 0.21],
+        ["hoppy"],
+        ["spicy"],
+        ["fresh"]
+      ],
+      "description": "A good beer takes its time. The long storage makes our yellow bright lager, “Original”, a flavourful beer enjoyed with fine pored, white foam. With a mild hoppy note and its pleasant fresh spicy taste, it goes very well with salads, poultry, stews or with a hearty snack. Brewed according to our centuries-old brewing tradition on the Weihenstephan hill.",
+      "imagesrc": "https://www.weihenstephaner.de/fileadmin/_processed_/6/a/csm_Original_8c89abca1d.png",
+      "id": 211
+    },
+    {
+      "name": "Stella Artois",
+      "brewery": "Stella Artois",
+      "origin": "Leuven, Flanders",
+      "type": "Pilsner",
+      "size": "0.33",
+      "price": "3.8",
+      "abv": "5",
+      "flavours": [
+        ["bitterness", 0.24],
+        ["hoppy"]
+      ],
+      "description": "Stella Artois was first brewed as a Christmas beer in Leuven. It was named Stella from the star of Christmas, and Artois after Sebastian Artois, founder of the brewery. It is brewed to perfection using the original Stella Artois yeast and the celebrated Saaz hops. It is the optimum premium lager, with its full flavour and clean crisp taste. ",
+      "imagesrc": "https://products0.imgix.drizly.com/ci-stella-artois-d4db6c78a3274139.jpeg?auto=format%2Ccompress&ch=Width%2CDPR&fm=jpg&q=20",
+      "id": 311
+    },
+    {
+      "name": "Pilsner Urquell",
+      "brewery": "Plzeňský Prazdroj",
+      "origin": "Pilsen, Jihozapad",
+      "type": "Pilsner",
+      "size": "0.33",
+      "price": "4.2",
+      "abv": "4.4",
+      "aroma": "caramel",
+      "flavours": [
+        ["bitterness", 0.4],
+        ["bittersweet"],
+        ["caramel"]
+      ],
+      "description": "In 1842, at our brewery in Plzeň, brewer Josef Groll introduced the world to the first golden ‘pilsner’ lager, and changed beer forever. His invention soon became the most popular style of beer on the planet.\n\nWe’ve brewed Pilsner Urquell in the same brewery using the same recipe for over 175 years. Today, we still insist on using traditional methods, like triple decoction and parallel brewing in wooden lagering barrels. It takes longer but means we never compromise on our taste.\n\nPilsner Urquell’s signature flavour balances sweetness from the triple-decocted malt, and bitterness from our Saaz hops. The thick head of dense wet foam adds smoothness and seals in flavour and aroma.\n\nIn every sip of Pilsner Urquell you’ll notice a refreshing crispness from natural carbonation, then subtle caramel tones and a clean finish with a pleasing hoppy bitterness.",
+      "imagesrc": "https://imagestoreretrieval.aspos.nl/Product/Front/601826/2c8c012f-0612-4820-9e0d-85815d86494a.png?h=410&w=410",
+      "id": 411
+    },
+    {
+      "name": "Serafijn Russian Imperial Stout",
+      "brewery": "Brouwerij Pirlot",
+      "origin": "Zandhoven, Flanders",
+      "type": "Stout",
+      "size": "0.33",
+      "price": "5.8",
+      "abv": "10",
+      "aroma": "maple syrup",
+      "flavours": [
+        ["bitterness", 0.66],
+        ["maple syrup"]
+      ],
+      "description": "Russian imperial stout with maple sirup infusion",
+      "imagesrc": "https://www.brouwerijhetnest.be/images/cache/serafijn-russian-imperial-stout320-800x800-center.jpg",
+      "id": 511
+    },
+    {
+      "name": "Baltic Porter",
+      "brewery": "BRLO",
+      "origin": "Berlin, Berlin",
+      "type": "Porter",
+      "size": "0.33",
+      "price": "6.8",
       "abv": "7",
-      "flavours": "test",
-      "description": "test test",
-      "imagesrc": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.f9Sm0R-zd0T6udt8ugYD7AHaEK%26pid%3DApi&f=1",
-      "id": 8
+      "aroma": "coffee",
+      "flavours": [
+        ["bitterness", 0.33],
+        ["caramel"],
+        ["dried fruit"],
+        ["chocolate"],
+        ["coffee"],
+        ["roasted chestnut"]
+      ],
+      "description": "A beer which earns its rightful place on the dinner table as a replacement for the post dinner espresso. Our Baltic Porter boasts notes of caramel, dried fruits, dark chocolate, robusta coffee, and roasted chestnuts. This complex array of aromas and flavours, as well as the beers deep mahogany hue, arise from the addition of caramel, chocolate, and roasted malts.",
+      "imagesrc": "https://www.biergarage.nl/wp-content/uploads/2021/02/BRLO-Baltic-Porter-600x603.png",
+      "id": 611
     },
     {
-      "name": "asdf",
-      "abv": "312",
-      "flavours": "213",
-      "description": "123",
-      "imagesrc": "https://miro.medium.com/max/1200/0*Wr4N602lGquZk5Ec.jpeg",
-      "id": 9
+      "name": "Espresso Stout",
+      "brewery": "Brouwerij Emelisse",
+      "origin": "Goes, Zeeland",
+      "type": "Stout",
+      "size": "0.33",
+      "price": "7.2",
+      "abv": "9.5",
+      "aroma": "coffee",
+      "flavours": [
+        ["bitterness", 0.71],
+        ["coffee"]
+      ],
+      "description": "Do you like Coffee? And think Stouts are tasty? Now you don’t have to choose anymore! This beer has both in 1 bottle. The roasted taste of espresso fits perfectly with the roasted flavors from the stout and provides an extra dimension in this beer.",
+      "imagesrc": "https://cdn.webshopapp.com/shops/65337/files/98859314/emelisse-espresso-stout-33cl.jpg",
+      "id": 711
     },
     {
-      "name": "EXPERT BEER",
-      "abv": "100%",
-      "flavours": "STRONG",
-      "description": "ALKALISCH",
-      "imagesrc": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQltoBh7M78fxT6CWLgOlaO6a6WZeHlfVPRJhQ5lOlip5yaotK2WTho0_ZeIPyMxGX1ANOS0Q8cFkS4ZPF8zhux-Xh7iFnl9g&usqp=CAY",
-      "id": 10
+      "name": "Guinness Special Export",
+      "brewery": "Guinness",
+      "origin": "Saint James' Gate, Leinster",
+      "type": "Stout",
+      "size": "0.33",
+      "price": "6.6",
+      "abv": "8",
+      "aroma": "",
+      "flavours": [
+        ["bitterness", 0.0]
+      ],
+      "description": "Commissioned by John Martin of Belgium in 1912. The first variety of Guinness to be pasteurised, in 1930.",
+      "imagesrc": "https://arthurenco.nl/wp-content/uploads/Guinness-Extra-Strong.jpg",
+      "id": 811
+    },
+    {
+      "name": "Aecht Schlenkerla Rauchbier - Märze",
+      "brewery": "Schlenkerla (Heller-Bräu Trum)",
+      "origin": "Bamberg, Bayern",
+      "type": "Smoked",
+      "size": "0.5",
+      "price": "5.6",
+      "abv": "5.1",
+      "aroma": "smoky",
+      "flavours": [
+        ["bitterness", 0.3],
+        ["smoky"]
+      ],
+      "description": "Bamberg’s speciality, a dark, bottom fermented smoked beer, brewed with Original Schlenkerla Smokemalt from the Schlenkerla maltings and tapped according to old tradition directly from the gravity-fed oakwood cask in the 14th century brewery tavern.",
+      "imagesrc": "https://naiv-bottle.shop/wp-content/uploads/2021/11/naiv-freistellen-vorlage-1_0000_Schlenkerla-Rauchbier-Ma%CC%88rzen.png",
+      "id": 812
+    },
+    {
+      "name": "Houtgerijpte Rook Dubbelbock",
+      "brewery": "Duits & Lauret",
+      "origin": "Everdingen, Utrecht",
+      "type": "Smoked",
+      "size": "0.33",
+      "price": "6.8",
+      "abv": "7.5",
+      "aroma": "wood",
+      "flavours": [
+        ["bitterness", 0.0],
+        ["wood"]
+      ],
+      "description": "This robust bock beer is the beer for lengthening evenings. The roasted and smoked malt varieties used give this beer its striking aroma and colour while the fragrant hop varieties and subtle touches of wood provide the beer fullness and depth. This strong beer can be enjoyed on its own but also combines well with beautiful stews",
+      "imagesrc": "https://cdn.myonlinestore.eu/93ed34ab-6be1-11e9-a722-44a8421b9960/image/cache/full/a6e529d427971f90015c59a02f2b4df47870c801.jpg",
+      "id": 911
+    },
+    {
+      "name": "Othmar Rauchbier",
+      "brewery": "Ootmarsummer Bierbrouwerij Heupink & Co",
+      "origin": "Ootmarsum, Overijssel",
+      "type": "Smoked",
+      "price": "5.6",
+      "abv": "6.2",
+      "size": "0.33",
+      "aroma": "BBQ",
+      "flavours": [
+        ["bitterness", 0.15],
+        ["smoked ham"],
+        ["BBQ"]
+      ],
+      "description": "Because the malt of this bottom-fermented Rauchbier is smoked over beech wood, a special taste has been created for the real beer lover. The taste is often associated with 'barbecue' and 'smoked ham'. Also a popular beer among whiskey connoisseurs, because whiskey can also be made from smoked malts. Serving temperature 7-8 °C Food: Delicious with a piece of game or dark meat.",
+      "imagesrc": "https://res.cloudinary.com/bierista/image/upload/c_fit,h_400/v1539771577/othmar-rauchbier",
+      "id": 101
+    },
+    {
+      "name": "Apple / Pomme",
+      "brewery": "Brouwerij Lindemans",
+      "origin": "Vlerenbeek, Flanders",
+      "type": "Fruit Lambic",
+      "price": "4.4",
+      "abv": "3.5",
+      "size": "0.25",
+      "aroma": "apple",
+      "flavours": [
+        ["bitterness", 0.12],
+        ["apple"]
+      ],
+      "description": "Making apple beer goes back to ancestral tradition. The Celts drink it in abundance during their harvest festivals. All we have done is extend the pleasure to the present day by adding the juice of several varieties of apples to our delicious lambic. The tasting experience, which is quite exceptional, combines the sweetness of cider with the sourness characteristic of lambic. The Americans are crazy about it, which is why they say, \"An apple a day keeps the doctor away\".",
+      "imagesrc": "https://s3.amazonaws.com/cdn.belgianstyleales.com/images/uploads/item7014_860x860.jpg",
+      "id": 111
+    },
+    {
+      "name": "Cassis",
+      "brewery": "Brouwerij Lindemans",
+      "origin": "Vlerenbeek, Flanders",
+      "type": "Fruit Lambic",
+      "price": "4.4",
+      "abv": "3.5",
+      "size": "0.25",
+      "aroma": "wine",
+      "flavours": [
+        ["bitterness", 0.05],
+        ["sour"],
+        ["sweet"]
+      ],
+      "description": "Is it a sparkling wine or a beer? That is the question amateurs of exceptional products ask when they discover our Cassis for the first time. Cassis Lindemans is a fruity beer made from a lambic base which, thanks to its shades of dark purple and its aromas, is spontaneously reminiscent of wine. The taste of Cassis Lindemans on the palate is inimitable: intense and sparkling with a sour-sweet finish.",
+      "imagesrc": "https://www.beermerchants.com/pub/media/catalog/product/cache/0c46622f88f930c2812af2e65bc76081/l/i/lindemans_cassis_2.png",
+      "id": 121
+    },
+    {
+      "name": "Cherry Chouffe",
+      "brewery": "Brasserie d'Achouffe",
+      "origin": "Achouffe, Wallonia",
+      "type": "Fruit Beer",
+      "price": "5.8",
+      "abv": "8",
+      "size": "0.33",
+      "aroma": "cherry",
+      "flavours": [
+        ["bitterness", 0.1],
+        ["cherry"]
+      ],
+      "description": "The gnomes love Achouffe beers and the juicy cherries which grow in their magical land. Every year they gather and store them in the attics at the brewery. One day, after an abundant season, the floor gave way under the weight of the harvest, and some cherries fell into the Mc CHOUFFE brewing below. Impish as ever, the gnomes kept quiet about the incident. Surprised to discover a glowing, ruby-tinted beer with a fruity taste, the master brewer decided to bottle it up. Enjoy Cherry CHOUFFE carefully to avoid staining your beard and always drink it in delightful company.",
+      "imagesrc": "https://imagestoreretrieval.aspos.nl/Product/Front/601826/5e373579-fb3b-4343-abc7-d4308dd63e55.jpg?h=600&w=600",
+      "id": 131
+    },
+    {
+      "name": "Duchesse de Bourgogne",
+      "brewery": "Brouwerij Verhaeghe",
+      "origin": "Vichte, Flanders",
+      "type": "Sour Flanders Red Ale",
+      "price": "4.8",
+      "abv": "6.2",
+      "size": "0.25",
+      "aroma": "acidic",
+      "flavours": [
+        ["bitterness", 0.33],
+        ["passion fruit"],
+        ["chocolate"]
+      ],
+      "description": "Duchesse de Bourgogne from Verhaeghe Brewery is the traditional Flemish red ale. This refreshing ale is matured in oak casks; smooth with a rich texture and interplay of passion fruit, and chocolate, and a long, dry and acidic finish. After the first and secondary fermentation, the beer goes for maturation into the oak barrels for 18 months. The final product is a blend of younger 8 months old beer with 18 months old beer. The average age of the Duchesse de Bourgogne before being bottled is 12 months.",
+      "imagesrc": "https://www.fiddler.nl/wp-content/uploads/2021/04/duchesse-de-bourhgodfjdohf.jpg",
+      "id": 141
+    },
+    {
+      "name": "Amstel Radler Citroen",
+      "brewery": "Amstel Bier",
+      "origin": "Zoeterwoude, South Holland",
+      "type": "Radler",
+      "price": "3",
+      "abv": "2",
+      "size": "0.3",
+      "aroma": "citrus",
+      "flavours": [
+        ["bitterness", 0.00],
+        ["citric"],
+        ["fruit"]
+      ],
+      "description": "The natural mix of Amstel beer and lemon water. Amstel Radler is doubly refreshing and contains 2% alcohol. Great for after sports or any other effort. - Amstel Radler in ofrece una fusión única entre el gran sabor de la cerveza Amstel, mezclada con zumo de limón natural, para crear una nueva experiencia de sabor.",
+      "imagesrc": "https://static.ah.nl/static/product/AHI_43545239363438323931_1_LowRes_JPG.JPG?options=399,q85",
+      "id": 151
+    },
+    {
+      "name": "Amstel Radler 0.0",
+      "brewery": "Amstel Bier",
+      "origin": "Zoeterwoude, South Holland",
+      "type": "Radler",
+      "price": "3",
+      "abv": "0",
+      "size": "0.33",
+      "aroma": "citrus",
+      "flavours": [
+        ["bitterness", 0.00],
+        ["citric"],
+        ["fruit"]
+      ],
+      "description": "Amstel Radler 0.0% is the thirst-quenching mix of alcohol-free Amstel beer and lemon water. Nice at any time of the day, for example, give a tour of the business.\n\n",
+      "imagesrc": "https://www.plus.nl/INTERSHOP/static/WFS/PLUS-Site/-/PLUS/nl_NL/product/L/146688.png",
+      "id": 161
+    },
+    {
+      "name": "Pear Cider",
+      "brewery": "Magners Irish Cider",
+      "origin": "Clonmel, Munster",
+      "type": "Cider",
+      "price": "4.8",
+      "abv": "4.5",
+      "size": "0.33",
+      "aroma": "pear",
+      "flavours": [
+        ["bitterness", 0.00],
+        ["pear"],
+        ["fruit"]
+      ],
+      "description": "Magners Pear Cider is created to the highest standards you would expect from Magners. The best quality pears are ripened and selected to provide a distinctive character and the delicately refreshing taste of Magners Irish Pear Cider.",
+      "imagesrc": "https://d3r6kbofdnmd8.cloudfront.net/media/catalog/product/cache/image/1536x/a4e40ebdc3e371adff845072e1c73f37/1/0/101704_magners_irish_pear_cider.jpg",
+      "id": 171
+    },
+    {
+      "name": "Somersby Apple Cider",
+      "brewery": "Carlsberg Group",
+      "origin": "Copenhagen, Region Hovedstaden",
+      "type": "Sweet Cider",
+      "price": "4.8",
+      "abv": "4.5",
+      "size": "0.33",
+      "aroma": "apple",
+      "flavours": [
+        ["bitterness", 0.33],
+        ["apple"],
+        ["fruit"]
+      ],
+      "description": "The Somersby Apple Cider is made from fermented apple juice, with added apple juice, sugar and natural flavoring to give a crisp and delicious apple cider taste. It contains no artificial sweeteners, flavors or colourings.\n\nSomersby is Carlsberg Group's biggest selling cider and was among the world's fastest growing international ciders in 2014. It is currently avaiable in more than 50 markets around the world.\n\nIn recent years, cider has experienced a dramatic renaissance. Today, it is a very popular alternative to beer and wine, and a natural alternative to flavoured Ready-to-Drink products.\n",
+      "imagesrc": "https://imagestoreretrieval.aspos.nl/Product/Front/601826/2b6fc8a1-86eb-49c7-af90-d51674f0f3f7.png?h=600&w=600",
+      "id": 181
+    },
+    {
+      "name": "Brunehaut Ambrée Organic & Gluten Free",
+      "brewery": "Brasserie de Brunehaut",
+      "origin": "Brunehaut, Wallonia",
+      "type": "Glutten-Free",
+      "price": "5.6",
+      "abv": "6.5",
+      "size": "0.33",
+      "aroma": "oak",
+      "flavours": [
+        ["bitterness", 0.19],
+        ["caramel"],
+        ["vanilla"],
+        ["fruit"]
+      ],
+      "description": "Amber copper color with a beige head.\nCaramel malt aromas reminiscent of vanilla, along with toffee, butterscotch and ripe fruits. Top-fermented and bottle-conditioned, this is a clean, refreshing regional 'artisan' beer.\nHazy amber to brown coloured beer, with a fluffy off-white head. Nice aroma of spices, yeast and oak. The alcohol subtle. Flavour is moderately spicy and slightly fruity, with balanced hops.\nThis beer is certified organic and Gluten Free.",
+      "imagesrc": "https://res.cloudinary.com/ratebeer/image/upload/w_250,c_limit/beer_153575.jpg",
+      "id": 191
+    },
+    {
+      "name": "Brunehaut Blanche Organic & Gluten Free",
+      "brewery": "Brasserie de Brunehaut",
+      "origin": "Brunehaut, Wallonia",
+      "type": "Glutten-Free",
+      "price": "5.6",
+      "abv": "5.5",
+      "size": "0.33",
+      "aroma": "citrus",
+      "flavours": [
+        ["bitterness", 0.15],
+        ["citrus"]
+      ],
+      "description": "A classic Belgian 'white beer' from the Hainaut region in the southwest Belgium, near the French border. Top-fermented and bottle-conditioned, this is a clean, refreshing regional 'artisan' beer.\nPresents a light hazy yellow colour with citrus and coriander aromas and fairly subtle malt and hops on the palate. The finish is dry and satisfying. Hazy yellow golden colour. Lemon custard, lime zest, and delicate spice melange aromas. Well-balanced, a frothy entry leads to a dryish medium body of nuts, baked oranges, and slightly phenolic mineral flavors. Finishes with a metallic ore dust, salt, and dried lemon fade. This beer is certified as organic, also vegan.",
+      "imagesrc": "https://www.bierglutenvrij.nl/media/catalog/product/cache/4/small_image/400x/9df78eab33525d08d6e5fb8d27136e95/b/r/brunehaut-witbier.png",
+      "id": 201
+    },
+    {
+      "name": "Brunehaut Blonde Organic & Gluten Free",
+      "brewery": "Brasserie de Brunehaut",
+      "origin": "Brunehaut, Wallonia",
+      "type": "Glutten-Free",
+      "price": "5.6",
+      "abv": "6.5",
+      "size": "0.33",
+      "aroma": "yeast",
+      "flavours": [
+        ["bitterness", 0.19],
+        ["yeast"],
+        ["spicy"]
+      ],
+      "description": "A classic Belgian blonde ale from the Hainaut region in the southwest Belgium, near the French border. Top-fermented and bottle-conditioned, this is a clean, refreshing regional 'artisan' beer.\nThis organic and gluten-free blonde ale presents a nice yeasty nose, long-lasting head and a spicy, earthy note on the palate.",
+      "imagesrc": "https://cdn.webshopapp.com/shops/255203/files/182728862/300x300x2/image.jpg",
+      "id": 211
+    },
+    {
+      "name": "Brunehaut Triple Organic & Gluten Free",
+      "brewery": "Brasserie de Brunehaut",
+      "origin": "Brunehaut, Wallonia",
+      "type": "Glutten-Free",
+      "price": "5.6",
+      "abv": "8",
+      "size": "0.33",
+      "aroma": "caramel",
+      "flavours": [
+        ["bitterness", 0.25],
+        ["fresh"],
+        ["caramel"]
+      ],
+      "description": "Look: A more coppery appearance and maintained, antique or light with a good persistent head.\nNose: The nose is relatively discreet and elegant with fermented touches and fine yeasts. Quite fresh.\nIn the mouth: The flavour is full of freshness despite the alcohol content. Then there is the strong side, it is full, fat and long. Nevertheless elegance remains at the end. Neither too sugary nor excessive caramel. A beer to drink with some hard cheeses, a young Comté with a fruity balance.",
+      "imagesrc": "https://www.glutenvrijewebshop.nl/media/catalog/product/cache/1/image/1200x/9df78eab33525d08d6e5fb8d27136e95/b/r/brunehaut-tripel-bier.png",
+      "id": 212
+    },
+    {
+      "name": "Erdinger Alkoholfrei",
+      "brewery": "Erdinger Weissbräu",
+      "origin": "",
+      "type": "",
+      "price": "",
+      "abv": "",
+      "size": "",
+      "aroma": "",
+      "flavours": [
+        ["bitterness", 0.33],
+        ["herby"],
+        ["acidic"],
+        ["blossom"],
+        ["fruit"]
+      ],
+      "description": "",
+      "imagesrc": "",
+      "id": 223
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   ]
 }
