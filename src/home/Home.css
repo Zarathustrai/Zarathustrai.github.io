@@ -1,5 +1,5 @@
 .Home .lander {
-    padding: 200px;
+    padding: 240px;
     text-align: center;
     background-color: #ffc023;
   }
@@ -7,16 +7,19 @@
 html {background-color: #ffc023
 }
 
-.center-image{
+.Home .lander .center-image{
     display:flex;
     justify-content:center; /* horizontally center */
-    align-items:center;    /* vertically center */
+    /*align-items:center;    !* vertically center *!*/
     height:200px;
     width:200px;
+    position: fixed;
+    bottom: 450px;
+    right: 610px;
     background:transparent;
 }
 
-.center-image img{
+.Home .lander .center-image img{
     max-width:100%;
     max-height:100%;
 }
@@ -92,6 +95,7 @@ html {background-color: #ffc023
 .btn-no:focus:hover {
     color: #d12a1e;
 }
+
 
 .divider{
     width:24px;

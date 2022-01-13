@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from './data/images/logo_text.png'; // Tell Webpack this JS file uses this image
+import logo from './data/images/logo_text.png';
 
 console.log(logo);
 
