@@ -67,11 +67,18 @@ export default class Questions extends React.Component {
 
   setAttributes() {
     let attributesCopy = this.state.attributeList.slice();
+    let flavours = ["flavours", []];
     for (const x in this.state.beers) {
       for (const y in this.state.beers[x]) {
-        if (attributesCopy.includes(y) === false) attributesCopy.push(y);
+        if (attributesCopy.includes(y) === false && y != "flavours") attributesCopy.push(y);
+        if (y === "flavours") {
+          for (const a in y) {
+            flavours[1].push(a[0]);
+          }
+        }
       }
     }
+    attributesCopy.push(flavours);
     this.setState({attributeList: attributesCopy});
   }
 
@@ -113,7 +120,7 @@ export default class Questions extends React.Component {
       return(
         <div>
           <p>{this.state.questionCount >= this.state.attributeList.length ?
-            "Out of bounds" : this.state.attributeList[this.state.questionCount]}</p>
+            "Out of bounds" : (Array.isArray(this.state.attributeList[this.state.questionCount])? this.state.attributeList[this.state.questionCount][0] : this.state.attributeList[this.state.questionCount])}</p>
           <button className="fat clickable" onClick={() => this.setState(prevState => {return {questionCount: prevState.questionCount + 1}})}>incrementQuestionCount</button>
           <p>QuestionCount = {this.state.questionCount}</p>
           <p>Page refresh resets the state. </p>
