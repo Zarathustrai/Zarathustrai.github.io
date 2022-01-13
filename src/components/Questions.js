@@ -3,16 +3,123 @@ import React from 'react';
 export default class Questions extends React.Component {
   constructor(props) {
     super(props);
+    this.state = {
+      beers: null,
+      attributeList: [],
+      questionCount: null,
+      points: [],
+      pointsCalculated: false,
+    };
+  }
+
+  questionKnowledgeSystem(attribute) {
+    if (attribute === "abv") {
+      return "";
+    } else
+    if (attribute === "style") {
+      return "";
+    } else
+    if (attribute === "color") {
+      return "";
+    } else
+    if (attribute === "aroma") {
+      return "";
+    } else
+    if (attribute === "flavours") {
+      return "";
+    } else
+    if (attribute === "price") {
+      return "";
+    } else {
+      return "";
+    }
+  }
+
+  pointKnowledgeSystem(attribute) {
+    // Calculate point values for each attribute.
+    // return [ratio negative (below), ratio positive(over)]
+    if (attribute === "abv") {
+      return [-0.6, -1];
+    } else
+    if (attribute === "style") {
+      return [-1, -1];
+    } else
+    if (attribute === "color") {
+      return [-0.7, -0.7];
+    } else
+    if (attribute === "aroma") {
+      return [-0.5, -0.5];
+    } else
+    if (attribute === "flavours") {
+      return [["bitterness", [-2, -5]]];
+    } else
+    if (attribute === "price") {
+      return [-0.2, -1];
+    } else {
+      alert("point calculation error: unsupported beer attribute found! \n" + "attribute = \"" + attribute + "\"");
+      return [-1, -1];
+    }
+  }
+
+  pointCount() {
+
+  }
+
+  setAttributes() {
+    let attributesCopy = this.state.attributeList.slice();
+    for (const x in this.state.beers) {
+      for (const y in this.state.beers[x]) {
+        if (attributesCopy.includes(y) === false) attributesCopy.push(y);
+      }
+    }
+    this.setState({attributeList: attributesCopy});
+  }
+
+  componentDidMount() {
+    const url = "http://localhost:3000/beers";
+    fetch(url)
+      .then(response => response.json())
+      .then(beers => this.setState({beers}))
+      .then(() => this.setAttributes())
+      .then(() => this.setState({questionCount: 0}));
+
+
+
+  }
+
+  componentDidUpdate() {
+    if (!this.state.pointsCalculated && this.state.questionCount === this.state.attributeList.length) {
+      alert("eeek")
+      let pointsCopy = this.state.points.slice();
+      for (const attr in this.state.attributeList) {
+        pointsCopy.push(this.pointKnowledgeSystem(attr))
+      }
+      this.setState({points: pointsCopy});
+      this.setState({pointsCalculated: true});
+    }
   }
 
   render() {
+    /*
+    let content;
+    if (this.state.test) {
+      content = "State1";
+    } else {
+      content = "State2";
+    }
+    */
+
     if (this.props.isVisible) {
       return(
-        <p>
-          Integer non suscipit arcu. Aliquam dapibus sagittis felis, vel molestie mi feugiat nec. Curabitur eleifend nulla enim, in sagittis dolor maximus ac. Fusce dignissim in ipsum a bibendum. Nam hendrerit ut purus at sagittis. Aliquam pellentesque interdum urna, non iaculis sapien blandit porta. Nulla tempus purus ut arcu ultrices, lobortis suscipit urna aliquam. Aliquam scelerisque, elit sit amet feugiat facilisis, orci augue ultrices ipsum, at volutpat arcu urna a orci. Nam id malesuada elit. Etiam malesuada felis eget eros venenatis scelerisque. Donec a quam dignissim, vestibulum ipsum et, congue ligula. Aenean quis hendrerit magna, ac semper odio. Aliquam erat volutpat.
+        <div>
+          <p>{this.state.questionCount >= this.state.attributeList.length ?
+            "Out of bounds" : this.state.attributeList[this.state.questionCount]}</p>
+          <button className="fat clickable" onClick={() => this.setState(prevState => {return {questionCount: prevState.questionCount + 1}})}>incrementQuestionCount</button>
+          <p>QuestionCount = {this.state.questionCount}</p>
+          <p>Page refresh resets the state. </p>
+          {this.state.points?.map(points => (<p key={points}>{points}</p>))}
 
-          Maecenas dictum sem nec convallis placerat. Nullam et est mollis justo venenatis suscipit id nec risus. Quisque iaculis elit non purus tristique dignissim. Interdum et malesuada fames ac ante ipsum primis in faucibus. Integer malesuada, felis eget pellentesque vestibulum, libero mi facilisis ligula, et fermentum leo felis ut metus. Donec viverra libero ut enim consectetur, faucibus rhoncus felis aliquam. Pellentesque quis arcu lacinia enim lobortis placerat. Nullam sit amet nibh porttitor, posuere elit ac, iaculis nisl. Aenean iaculis lectus ac nisi lacinia auctor. Vestibulum egestas suscipit pharetra. Proin vestibulum commodo dapibus. Mauris congue, elit vel suscipit pharetra, elit mi euismod odio, a ultrices velit mauris dignissim sem. Nam condimentum, ligula aliquam tincidunt pretium, justo lectus laoreet ante, eu efficitur augue tortor cursus tellus.
-        </p>
+        </div>
       );
     } else {
       return(null);
