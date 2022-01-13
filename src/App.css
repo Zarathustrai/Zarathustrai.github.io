@@ -10,6 +10,15 @@ html {
   background: hsl(var(--light) / .2);
 }
 
+
+.App .navbar-brand {
+  font-weight: bold;
+}
+
+.App .container{
+  align-content: center
+}
+
 .App {
   display: grid;
   grid-template-rows: auto auto 1fr;
