@@ -1,21 +1,23 @@
 .Home .lander {
-    padding: 240px;
+    padding: 120px;
     text-align: center;
     background-color: #ffc023;
   }
-
-html {background-color: #ffc023
+html {
+    background-color: #ffc023;
+    min-height: 100%;
+    height: auto;
 }
 
 .Home .lander .center-image{
-    display:flex;
+    display: compact;
     justify-content:center; /* horizontally center */
     /*align-items:center;    !* vertically center *!*/
-    height:200px;
-    width:200px;
+    height:150px;
+    width:150px;
     position: fixed;
-    bottom: 450px;
-    right: 610px;
+    bottom: -76px;
+    right: -25px;
     background:transparent;
 }
 
@@ -23,11 +25,15 @@ html {background-color: #ffc023
     max-width:100%;
     max-height:100%;
 }
+@font-face {
+    font-family: bebas;
+    src: url("../data/BebasNeue-Regular.ttf");
+}
 
 .Home .lander h1 {
-    font-family: "Open Sans", sans-serif;
+    font-family: bebas;
     font-size: 128px;
-    padding: 10px;
+    padding: 0;
     color: #ffffff;
     font-weight: 1600;
 }
@@ -96,7 +102,11 @@ html {background-color: #ffc023
     color: #d12a1e;
 }
 
-
+.divider-height{
+    height:6px;
+    width:auto;
+    display:inline-block;
+}
 .divider{
     width:24px;
     height:auto;

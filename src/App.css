@@ -4,6 +4,23 @@
   --dark: 26 100% 50%;
 }
 
+.center-image{
+  display: compact;
+  justify-content:center; /* horizontally center */
+  /*align-items:center;    !* vertically center *!*/
+  height:150px;
+  width:150px;
+  position: fixed;
+  bottom: -76px;
+  right: -25px;
+  background:transparent;
+}
+
+.center-image img{
+  max-width:100%;
+  max-height:100%;
+}
+
 html {
   min-height: 100%;
   height: auto;
@@ -59,7 +76,7 @@ html {
   border: 2px solid gray;
   border-radius: 50%;
   cursor: pointer;
-  background-color: white;
+  background-color: #ffc023;
 }
 
 .nav {
@@ -139,13 +156,13 @@ html {
   align-items: center;
   justify-content: stretch;
   padding: 1em;
-  min-height: 10rem;
-  max-height: 20rem;
-  width: 15rem;
+  min-height: 20rem;
+  max-height: 40rem;
+  width: 20rem;
   border: 2px solid black;
   border-radius: 10px;
 
-  background: white;
+  background: #ffc023;
   overflow-y: auto;
   scrollbar-width: thin; /* firefox only */
   scrollbar-style: rounded; /* firefox only */
@@ -201,7 +218,7 @@ img {
     left: 0;
     border-radius: 50%;
     /* Create the box shadow at expanded size. */
-    box-shadow: 0 10px 50px 0 rgba(0, 0, 0, 0.5);
+    box-shadow: 0 10px 50px 0 rgb(255, 192, 35);
     /* Hidden by default. */
     opacity: 0;
     transition: opacity .5s;
@@ -236,7 +253,7 @@ img {
 .BeerForm > *:not(:nth-last-child(-n+2)) {
   text-align: left;
   border-radius: 5px;
-  border: 2px solid grey;
+  border: 2px solid #ffc023;
 }
 .BeerForm > textarea {
   min-height: 8ch;
