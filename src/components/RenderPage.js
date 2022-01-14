@@ -4,6 +4,7 @@ import About from './About';
 import Analysis from './Analysis';
 import Questions from './Questions';
 import './../App.css';
+import Logo from "./data/images/logo_text.png";
 
 export default function RenderPage() {
   const [page, setPage] = useState("Questions");
@@ -21,16 +22,12 @@ export default function RenderPage() {
 
   return(
     <div>
-      <center-img>
-
-      </center-img>
       <NavBar setPage={setPage}/>
       <div className="content content-padding">
         <About isVisible={visibleAbout}/>
         <Analysis isVisible={visibleAnalysis}/>
         <Questions isVisible={visibleQuestions}/>
       </div>
-
     </div>
   );
 };

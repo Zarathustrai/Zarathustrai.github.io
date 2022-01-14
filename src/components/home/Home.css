@@ -12,7 +12,7 @@ html {
 .Home .lander .center-image{
     display: compact;
     justify-content:center; /* horizontally center */
-    /*align-items:center;    !* vertically center *!*/
+    align-items:center;    /* vertically center */
     height:150px;
     width:150px;
     position: fixed;
@@ -107,6 +107,7 @@ html {
     width:auto;
     display:inline-block;
 }
+
 .divider{
     width:24px;
     height:auto;

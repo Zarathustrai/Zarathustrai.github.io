@@ -1,0 +1,22 @@
+.img-smoll{
+    height:150px;
+    width:150px;
+    display: compact;
+    justify-content:center; /* horizontally center */
+    align-items:center;    /* vertically center */
+    position: fixed;
+    bottom: -76px;
+    right: 0;
+    background:transparent;
+}
+.img-big{
+    height:178px;
+    width:178px;
+    display: compact;
+    justify-content:center; /* horizontally center */
+    align-items:center;    /* vertically center */
+    position: absolute;
+    bottom: 622px;
+    right: 1260px;
+    background:transparent;
+}

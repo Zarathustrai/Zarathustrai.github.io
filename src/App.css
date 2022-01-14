@@ -1,35 +1,20 @@
 :root {
-  --light: 43 86% 100%;
-  --medium: 42 100% 50%;
-  --dark: 26 100% 50%;
-}
-
-.center-image{
-  display: compact;
-  justify-content:center; /* horizontally center */
-  /*align-items:center;    !* vertically center *!*/
-  height:150px;
-  width:150px;
-  position: fixed;
-  bottom: -76px;
-  right: -25px;
-  background:transparent;
-}
-
-.center-image img{
-  max-width:100%;
-  max-height:100%;
+  --light: 44, 100%, 57%;
+  --medium: 43, 100%, 57%;
+  --dark: 39, 100%, 57%;
 }
 
 html {
   min-height: 100%;
   height: auto;
-  background: hsl(var(--light) / .2);
+  color: #ffc023;
+
 }
 
 
 .App .navbar-brand {
   font-weight: bold;
+  color: #ffc023;
 }
 
 .App .container{
@@ -45,6 +30,7 @@ html {
 
 .app-header {
   display: grid;
+  color: #ffc023;
   grid-template-columns: auto 1fr auto;
   grid-gap: 1rem;
   background: linear-gradient(to bottom, hsl(var(--dark)) , hsl(var(--medium)) 20%);
@@ -54,16 +40,17 @@ html {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: center;
-  min-height: 5em;
+  align-items: start;
+  min-height: 10em;
+  color: #ffc023;
   /*padding: 1em;*/
 }
 
 .top-left {
   display: flex;
   flex-direction: row;
-  align-items: center;
-  justify-content: center;
+  align-items: start;
+  justify-content: start;
   gap: 0em;
 }
 
@@ -76,23 +63,37 @@ html {
   border: 2px solid gray;
   border-radius: 50%;
   cursor: pointer;
-  background-color: #ffc023;
+  /*background-color: rgba(255, 192, 35, 0.5);*/
 }
 
 .nav {
   display: flex;
   flex-direction: left;
+  color: #ffffff;
   justify-content: center;
   align-items: center;
   font-weight: bold;
-  font-size: 2ch;
-  width: 10ch;
-  height: 100%;
+  font-size: 2.25ch;
+  height: 12ch;
+  width: 28.5ch;
 }
 
+
 .nav:hover {
-  color: hsl(0, 100%, 30%);
+  background-color: #ffc014;
+  transform: translate(0px, -4px);
+  color: #ffffff;
+  box-shadow: 1px 15px 30px 6px rgba(255, 255, 255, 0.2);
 }
+
+.nav:focus {
+  background-color: #5aaa4e;
+}
+
+.nav:focus:hover {
+  color: #5aaa4e;
+}
+
 
 .button {
 
@@ -116,7 +117,7 @@ html {
   align-items: stretch;
   justify-content: center;
   align-content: stretch;
-  gap: 4em;
+  gap: 6em;
 }
 
 .content-padding {
@@ -141,12 +142,12 @@ html {
   /*sets the container as a grid with variable number of columns*/
   width: calc(100% - 2em);
   display:grid;
-  grid-template-columns: repeat(auto-fit, minmax(15rem,1fr));
-  grid-gap: 3em;
-  margin:1em 0 3em;
+  grid-template-columns: repeat(3, 200px);
+  grid-column-gap: 14em;
+  grid-row-gap: 3em;
+  margin:1em 2em 3em;
   justify-items: center;
-
-  padding: 1em;
+  padding: 5em;
 }
 
 .card {
@@ -156,9 +157,9 @@ html {
   align-items: center;
   justify-content: stretch;
   padding: 1em;
-  min-height: 20rem;
-  max-height: 40rem;
-  width: 20rem;
+  min-height: 10rem;
+  max-height: 50rem;
+  width: 34rem;
   border: 2px solid black;
   border-radius: 10px;
 
@@ -249,15 +250,29 @@ img {
   display: grid;
   flex-direction: row;
   gap: 1em;
+  margin-left: 8em;
+  justify-items: center;
+
 }
 .BeerForm > *:not(:nth-last-child(-n+2)) {
-  text-align: left;
+  text-align: center;
   border-radius: 5px;
   border: 2px solid #ffc023;
 }
 .BeerForm > textarea {
+  text-align: center;
   min-height: 8ch;
   max-height: 30ch;
   min-width: 12ch;
   max-width: 30ch;
+}
+.divider{
+  width:12px;
+  height:auto;
+  display:inline-block;
+}
+.divider-width{
+  width:196px;
+  height:auto;
+  display:inline-block;
 }

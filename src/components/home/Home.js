@@ -2,8 +2,7 @@ import React, { Component } from "react";
 import { Button } from 'react-bootstrap';
 import history from '../../history';
 import "./Home.css";
-import Logo from "../Logo"
-import imgsrc from "../../logo_text.png"
+import logo from "../data/images/logo_text.png";
 
 export default class Home extends Component {
   render() {
@@ -11,8 +10,7 @@ export default class Home extends Component {
       <div className="Home">
         <div className="lander">
             <div className="center-image">
-                <Logo>
-                </Logo>
+                <img className="img-smoll" src={logo} alt="" />
             </div>
             <h1>BEER MENTOR</h1>
           <p>Are you over 18?</p>
