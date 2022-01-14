@@ -112,6 +112,7 @@ html {
 
 .content {
   display: grid;
+  background-color: #ffc023;
   grid-template-columns: 1fr auto;
   justify-items: stretch;
   align-items: stretch;
@@ -160,25 +161,30 @@ html {
   min-height: 10rem;
   max-height: 50rem;
   width: 34rem;
-  border: 2px solid black;
+  border: 0;
   border-radius: 10px;
-
-  background: #ffc023;
+  background: #FED98A;
   overflow-y: auto;
   scrollbar-width: thin; /* firefox only */
   scrollbar-style: rounded; /* firefox only */
 }
 /* no firefox only \/\/\/*/
 .card::-webkit-scrollbar {
-  width: 10px;
-  height: 10px;
+  width: 5px;
+  height: 5px;
 }
 .card::-webkit-scrollbar-track {
   background-color: transparent;
   border-radius: 10px;
 }
 .card::-webkit-scrollbar-thumb {
-  background-color: rgba(0, 0, 0, 0.4);
+  display: none;
+  background-color: #d3a543;
+  border-radius: 10px;
+}
+.card:hover::-webkit-scrollbar-thumb {
+  display: block;
+  background-color: #d3a543;
   border-radius: 10px;
 }
 
@@ -192,7 +198,7 @@ html {
 }
 
 img {
-  margin-top: -56.25%;
+  margin-top: -28.25%;
   position: relative;
   width: 100%;
   object-fit: contain;
