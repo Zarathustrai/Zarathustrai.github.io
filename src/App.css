@@ -1,15 +1,35 @@
 :root {
   --links: 231.8, 40.8%, 24.5%;
-  --error: 354.1, 55.8%, 64.5%;
+
   --light: 60, 100%, 73%;
   --slight: 98, 100%, 100%;
   --text: 0, 0%, 100%;
   --accent: 42, 95%, 51%;
   --saccent: 108, 57%, 79%;
   --dark: 41, 100%, 38%;
-  --sdark: 110, 29%, 40%;
   --compliment: 162, 95%, 51%;
-  --background: 42.8,100%,56.9%;
+
+  --green-h: 112.2;
+  --green-s: 37.1%;
+  --green-l: 48.6%;
+  --green: var(--green-h), var(--green-s), var(--green-l);
+
+  --red-h: 4;
+  --red-s: 74.9%;
+  --red-l: 46.9%;
+  --red: var(--red-h), var(--red-s), var(--red-l);
+
+  --black: 0, 0%, 0%;
+
+  --sdark-h: 110;
+  --sdark-s: 29%;
+  --sdark-l: 40%;
+  --sdark: var(--sdark-h), var(--sdark-s), var(--sdark-l);
+
+  --background-h: 42.8;
+  --background-s: 100%;
+  --background-l: 56.9%;
+  --background: var(--background-h), var(--background-s), var(--background-l);
 }
 
 html {
@@ -28,6 +48,10 @@ html {
   font-size: max(1ch, 1.3vw);
 }
 
+h1 {
+  font-size: max(1.5ch, 2vw);
+}
+
 .medium {
   font-size: max(2ch, 3vw);
 }
@@ -35,6 +59,59 @@ html {
 .big {
   font-size: max(6ch, 5vw);
 }
+
+.fancyButton {
+  background-color: hsl(var(--black));
+  padding: 15px 50px;
+  color: white;
+  font-size: 32px;
+  border-radius: 88px;
+  cursor: pointer;
+  border: 2px dotted hsl(var(--black));
+  margin-bottom: 80px;
+  transform: translate3d(0, 0, 0);
+  transition: all 0.2s ease;
+}
+.fancyButton:hover {
+    transform: translate(0px, -4px);
+    box-shadow: 1px 15px 30px -12px rgba(255, 255, 255, 0.2);
+}
+.fancyButton:focus, .fancyButton:focus:hover {
+  margin-bottom: 75px;
+  margin-inline: -5px;
+  margin-top: -5px;
+}
+
+.yes, .continue {
+  background-color: hsl(var(--green));
+  border: 2px solid hsl(var(--green));
+}
+.yes:hover, .continue:hover {
+  background-color: hsl(var(--green));
+  color: #ffffff;
+}
+.yes:focus, .continue:focus, .yes:focus:hover, .continue:focus:hover {
+  border: 5px solid hsl(var(--green-h), var(--green-s), calc(var(--green-l)*0.8));
+}
+.yes:active, .continue:active, .yes:active:hover, .continue:active:hover {
+  color: hsl(var(--green));
+}
+
+.no, .reset {
+  background-color: hsl(var(--red));
+  border: 2px solid hsl(var(--red));
+}
+.no:hover, .reset:hover {
+  background-color: hsl(var(--red));
+  color: #ffffff;
+}
+.no:focus, .reset:focus, .no:focus:hover, .reset:focus:hover {
+  border: 5px solid hsl(var(--red-h), var(--red-s), calc(var(--red-l)*0.8));
+}
+.no:active, .reset:active, .no:active:hover, .reset:active:hover {
+  color: hsl(var(--red));
+}
+
 
 .App {
   display: grid;
@@ -125,19 +202,37 @@ html {
   align-items: start;
   justify-content: center;
   align-content: start;
-  grid-auto-flow: dense;
 }
 
 .centerContent {
+  height: 70vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
   align-items: center;
+  align-content: stretch;
   width: clamp(320px, 50vw, 100%);
   border: 2px solid black;
   border-radius: 10px;
   padding: max(3vh, 1rem);
   margin-inline: auto;
+  overflow-y: auto;
+  scrollbar-width: thin; /* firefox only */
+  scrollbar-style: rounded; /* firefox only */
+}
+/* no firefox only \/\/\/*/
+.centerContent::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+.centerContent::-webkit-scrollbar-track {
+  background-color: transparent;
+  border-radius: 10px;
+}
+.centerContent::-webkit-scrollbar-thumb {
+  background-color: hsl(var(--text));
+  border-radius: 10px;
 }
 
 .inputs {
@@ -154,14 +249,14 @@ html {
 }
 
 .cards {
+  position: relative;
   /*sets the container as a grid with variable number of columns*/
   width: calc(100% - 2em);
-  display:grid;
-  grid-template-columns: repeat(auto-fit, minmax(15rem,1fr));
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem,1fr));
   grid-gap: 3em;
-  margin:1em 0 3em;
+  margin-inline: auto;
   justify-items: center;
-  padding: 1em;
 }
 
 .card {
@@ -173,11 +268,12 @@ html {
   padding: 1em;
   min-height: 10rem;
   max-height: 20rem;
-  width: 15rem;
+  max-width: 20rem;
   border: 2px solid black;
   border-radius: 10px;
 
-  background: hsl(var(--light));
+  background: hsl(calc(var(--background-h)*1.1) calc(var(--background-s)*1.1) calc(var(--background-l)*1.1));
+  overflow-x: hidden;
   overflow-y: auto;
   scrollbar-width: thin; /* firefox only */
   scrollbar-style: rounded; /* firefox only */
@@ -192,7 +288,7 @@ html {
   border-radius: 10px;
 }
 .card::-webkit-scrollbar-thumb {
-  background-color: hsl(var(--text));
+  background-color: hsla(var(--background));
   border-radius: 10px;
 }
 

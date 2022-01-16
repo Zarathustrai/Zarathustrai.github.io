@@ -123,7 +123,8 @@ export default class Questions extends React.Component {
             <div className="question fat">
               <p>{this.state.questionCount >= this.state.attributeList.length ?
                 "Out of bounds" : (Array.isArray(this.state.attributeList[this.state.questionCount])? this.state.attributeList[this.state.questionCount][0] : this.state.attributeList[this.state.questionCount])}</p>
-              <button className="small fat clickable" onClick={() => this.setState(prevState => {return {questionCount: prevState.questionCount + 1}})}>incrementQuestionCount</button>
+              <button className="fancyButton yes small fat" onClick={() => this.setState(prevState => {return {questionCount: prevState.questionCount + 1}})}>next</button>
+              <button className="fancyButton no small fat" onClick={() => this.setState(prevState => {return {questionCount: prevState.questionCount + 1}})}>reset</button>
               <p>QuestionCount = {this.state.questionCount}</p>
               <p>Page refresh resets the state. </p>
               {this.state.points?.map(points => (<p key={points}>{points}</p>))}
