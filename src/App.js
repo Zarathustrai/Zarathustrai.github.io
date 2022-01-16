@@ -1,10 +1,11 @@
+import logo from './logo192.png';
 import './App.css';
-import Routes from './Routes';
+import RenderPage from './components/RenderPage';
 
 function App() {
   return (
     <div className="App">
-        <Routes/>
+        <RenderPage/>
     </div>
   );
 }

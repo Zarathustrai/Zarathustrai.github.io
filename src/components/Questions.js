@@ -1,10 +1,10 @@
 import React from 'react';
 
-
 export default class Questions extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
+      animate: true,
       beers: null,
       attributeList: [],
       questionCount: null,
@@ -90,9 +90,6 @@ export default class Questions extends React.Component {
       .then(beers => this.setState({beers}))
       .then(() => this.setAttributes())
       .then(() => this.setState({questionCount: 0}));
-
-
-
   }
 
   componentDidUpdate() {
@@ -119,17 +116,27 @@ export default class Questions extends React.Component {
 
     if (this.props.isVisible) {
       return(
-        <div>
-          <p>{this.state.questionCount >= this.state.attributeList.length ?
-            "Out of bounds" : (Array.isArray(this.state.attributeList[this.state.questionCount])? this.state.attributeList[this.state.questionCount][0] : this.state.attributeList[this.state.questionCount])}</p>
-          <button className="fat clickable" onClick={() => this.setState(prevState => {return {questionCount: prevState.questionCount + 1}})}>incrementQuestionCount</button>
-          <p>QuestionCount = {this.state.questionCount}</p>
-          <p>Page refresh resets the state. </p>
-          {this.state.points?.map(points => (<p key={points}>{points}</p>))}
+        <div className={this.state.animate ? "fadeIn content" : "content"}>
+          <div className="leftContent"></div>
 
+          <div className="centerContent small">
+            <div className="question fat">
+              <p>{this.state.questionCount >= this.state.attributeList.length ?
+                "Out of bounds" : (Array.isArray(this.state.attributeList[this.state.questionCount])? this.state.attributeList[this.state.questionCount][0] : this.state.attributeList[this.state.questionCount])}</p>
+              <button className="small fat clickable" onClick={() => this.setState(prevState => {return {questionCount: prevState.questionCount + 1}})}>incrementQuestionCount</button>
+              <p>QuestionCount = {this.state.questionCount}</p>
+              <p>Page refresh resets the state. </p>
+              {this.state.points?.map(points => (<p key={points}>{points}</p>))}
+            </div>
+          </div>
+
+          <div className="rightContent"></div>
         </div>
       );
     } else {
+      if (this.state.animate) {
+        this.setState({animate: false});
+      }
       return(null);
     }
   }

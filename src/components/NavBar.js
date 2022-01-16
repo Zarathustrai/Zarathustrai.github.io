@@ -1,20 +1,18 @@
 import React from 'react';
 import RenderPage from './RenderPage';
-import Logo from "./Logo";
 
 export default function NavBar({ setPage }) {
 
   return (
-    <header className="app-header">
-      <div className="top-left">
-          <Logo/>
-          <div className="divider"/>
-          <div className="divider-width"/>
-        <div className="nav clickable" onClick={() => setPage("Questions")}>Questions</div>
-        <div className="nav clickable" onClick={() => setPage("Analysis")}>Analysis</div>
-        <div className="nav clickable" onClick={() => setPage("About")}>About</div>
+    <>
+      <div className="topbar">
+        <h1 className="fat big font">Beer Mentor</h1>
       </div>
-    </header>
-
+      <div className="navbar fat medium font">
+        <div className="fat nav clickable font" tabIndex="1234" onClick={() => setPage("Questions")}>Questions</div>
+        <div className="fat nav clickable font" tabIndex="1235" onClick={() => setPage("Analysis")}>Analysis</div>
+        <div className="fat nav clickable font" tabIndex="1236" onClick={() => setPage("About")}>About</div>
+      </div>
+    </>
   );
 }
