@@ -10,28 +10,92 @@ export default class Questions extends React.Component {
       questionCount: null,
       points: [],
       pointsCalculated: false,
+      QA: {},
     };
   }
 
+
   questionKnowledgeSystem(attribute) {
-    if (attribute === "abv") {
-      return "";
-    } else
-    if (attribute === "style") {
-      return "";
-    } else
-    if (attribute === "color") {
-      return "";
-    } else
-    if (attribute === "aroma") {
-      return "";
-    } else
-    if (attribute === "flavours") {
-      return "";
-    } else
     if (attribute === "price") {
-      return "";
-    } else {
+      this.state.QA = {
+        "question": "What is your budget?",
+        "answer1": "insertRange",
+        "answer2": "Show everything"
+      };
+    } else if (attribute === "ABV") {
+      this.state.QA = {
+        "question": "How strong do you like your beer?",
+        "answer1": "insertRange",
+        "answer2": "Show everything"
+      };
+    } else if (attribute === "brewery") {
+      this.state.QA = {
+        "question": "Which one of these popular breweries do you like?",
+        "answer1": "Budweiser",
+        "answer2": "Heineken",
+        "answer3": "Stella Artois",
+        "answer4": "Corona",
+        "answer5": "Guinness",
+        "answer6": "I don't like any of those / I don't know"
+      };
+    } else if (attribute === "style") {
+      this.state.QA = {
+        "question": "Do you like " + attribute + "style beer?",
+        "answer1": "Blond",
+        "answer2": "Brown",
+        "answer3": "White / Wheat",
+        "answer4": "Triple",
+        "answer5": "Barleywine",
+        "answer6": "IPA / Bitter",
+        "answer7": "Porter / Stout",
+        "answer8": "Smoked",
+        "answer9": "Fruit / Sour",
+        "answer10": "Cider / Radler",
+        "answer11": "Glutten Free",
+        "answer 12": "I don't know"
+      };
+    } else if (attribute === "aroma") {
+      this.state.QA = {
+        "question": "What " + attribute + "beer do you like?",
+        "answer1": "Fruit",
+        "answer2": "Caramel",
+        "answer3": "Hop",
+        "answer4": "Malt",
+        "answer5": "Wood",
+        "answer6": "Spice / Herb",
+        "answer7": "Wheat / Yeast",
+        "answer8": "Chocolate",
+        "answer9": "Vanilla",
+        "answer10": "Coffee",
+        "answer11": "I don't know / I don't care"
+      };
+    } else if (attribute === "flavours") {
+      this.state.QA = {
+        "question": "What flavor beer do you like?",
+        "answer1": "Fruit",
+        "answer2": "Caramel",
+        "answer3": "Hop",
+        "answer4": "Citrus",
+        "answer5": "Wood",
+        "answer6": "Spice / Herb",
+        "answer7": "Wheat / Yeast",
+        "answer8": "Chocolate",
+        "answer9": "Vanilla",
+        "answer10": "Coffee",
+        "answer11": "I don't know / I don't care"
+      };
+    } else if (attribute==="origin"){
+      this.state.QA = {
+        "question": "What is your preferred beer " + attribute + "?",
+        "answer1": "Belgium",
+        "answer2": "Denmark",
+        "answer3": "Germany",
+        "answer4": "Netherlands",
+        "answer5": "UK",
+        "answer6": "Czech Republic",
+        "answer7": "No preference"
+      }
+    } else{
       return "";
     }
   }

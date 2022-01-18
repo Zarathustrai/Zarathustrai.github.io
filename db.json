@@ -6,7 +6,7 @@
       "abv": "7%",
       "style": "Blonde",
       "color": "dark gold brown",
-      "aroma": "light fruity",
+      "aroma": "Fruity",
       "flavours": [
         ["bitterness", 0.1],
         ["sweetness", 0.5],
@@ -24,7 +24,7 @@
       "abv": "5.2%",
       "style": "Blonde",
       "color": "dark gold brown",
-      "aroma": "hint of caramel",
+      "aroma": "Caramel",
       "flavours": [
         ["bitterness", 0.23],
         ["slightly sweet"],

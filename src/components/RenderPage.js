@@ -3,6 +3,7 @@ import NavBar from './NavBar';
 import About from './About';
 import Analysis from './Analysis';
 import Questions from './Questions';
+import Logo from './Logo';
 
 export default function RenderPage() {
   const [page, setPage] = useState("Questions");
