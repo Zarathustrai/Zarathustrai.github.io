@@ -1,0 +1,10 @@
+{
+	"Beers": [{
+		"name": "Peterus Red",
+		"abv": "8.5%",
+		"flavours": ["Full-bodied", "fruity", "sour"],
+		"description": "Would you like to taste an intriguing beer? Then RED is definitely something for you. A beer for those who dare to take a risk. It has a full and powerful taste, with a pleasant cherry flavour. Be warned: it’s a very smooth beer. ",
+		"imagesrc": "/data/images/1574157584-red-packshot-flesglas-2.png"}
+	]
+
+}
