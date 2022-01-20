@@ -1,16 +1,19 @@
 React beer app
 
-Needs:
-- swapping screens to trace/analysis or an about section and back to questions
-- knowledge base
-- solver + questions css
-- analysis
-- cleaner looking css
+NEEDED:
+- Adjusting the analysis section (just making the calculations/decision-making process to be displayed) + minor database fixes.
+- Fixing the UI design.
+- Adding a logo.
 
-Extra:
-- animations
-- going back to questions (using react states)
 
+DONE:
+- Knowledge system
+- Point calculation based on answeres.
+- Questions.
+- Final feedback provided to the user based on the inputs.
+
+EXTRA:
+- Hosting the database online to connect it to our website ( zarathustrai.github.io , currently does not have any 'filling' as GitHub only allows static content). 
 
 
 ------------------------------------------
