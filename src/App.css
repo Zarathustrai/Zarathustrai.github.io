@@ -32,6 +32,115 @@
   --background: var(--background-h), var(--background-s), var(--background-l);
 }
 
+.hidden {
+  display: none !important;
+}
+
+.rangeSlider {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: flex-start;
+  width: 30vw;
+}
+.slider-track{
+    width: 100%;
+    height: 5px;
+    position: relative;
+    margin: auto;
+    margin-block: 15px;
+    border-radius: 5px;
+}
+.values{
+    background-color: #3264fe;
+    width: 32%;
+    position: relative;
+    margin: auto;
+    padding: 10px 0;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 25px;
+    color: #ffffff;
+}
+.values:before{
+    content: "";
+    position: absolute;
+    height: 0;
+    width: 0;
+    border-top: 15px solid #3264fe;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    margin: auto;
+    bottom: -14px;
+    left: 0;
+    right: 0;
+}
+
+input[type="range"]{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 100%;
+    outline: none;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    background-color: transparent;
+    pointer-events: none;
+}
+
+input[type="range"]::-webkit-slider-runnable-track{
+    -webkit-appearance: none;
+    height: 5px;
+}
+input[type="range"]::-moz-range-track{
+    -moz-appearance: none;
+    height: 5px;
+}
+input[type="range"]::-ms-track{
+    appearance: none;
+    height: 5px;
+}
+input[type="range"]::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    height: 1.7em;
+    width: 1.7em;
+    background-color: #3264fe;
+    cursor: pointer;
+    margin-top: -9px;
+    pointer-events: auto;
+    border-radius: 50%;
+    border: 2px solid #3264fe;
+}
+input[type="range"]::-moz-range-thumb{
+    -webkit-appearance: none;
+    height: 1.7em;
+    width: 1.7em;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: #3264fe;
+    pointer-events: auto;
+    border: 2px solid #3264fe;
+}
+input[type="range"]::-ms-thumb{
+    appearance: none;
+    height: 1.7em;
+    width: 1.7em;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: #3264fe;
+    pointer-events: auto;
+    border: 2px solid #3264fe;
+}
+input[type="range"]:active::-webkit-slider-thumb{
+    background-color: #ffffff;
+    border: 3px solid #3264fe;
+}
+
 html {
   min-height: 100%;
   height: auto;
@@ -61,10 +170,14 @@ h1 {
 }
 
 .fancyButton {
+  margin-top: calc(70vh - 10vh);
+  margin-left: calc(clamp(320px, 50vw, 100%) - 10vw);
+  position: absolute;
   background-color: hsl(var(--black));
-  padding: 15px 50px;
+  padding-block: 3vh;
+  padding-inline: 3vw;
   color: white;
-  font-size: 32px;
+  font-size: max(1ch, 1.3vw);
   border-radius: 88px;
   cursor: pointer;
   border: 2px dotted hsl(var(--black));
@@ -77,9 +190,10 @@ h1 {
     box-shadow: 1px 15px 30px -12px rgba(255, 255, 255, 0.2);
 }
 .fancyButton:focus, .fancyButton:focus:hover {
-  margin-bottom: 75px;
   margin-inline: -5px;
-  margin-top: -5px;
+  margin-top: calc(70vh - 10vh) + 5px;
+  margin-top: calc(70vh - 10vh);
+  margin-left: calc(clamp(320px, 50vw, 100%) - 10vw);
 }
 
 .yes, .continue {
@@ -112,6 +226,9 @@ h1 {
   color: hsl(var(--red));
 }
 
+.question {
+  width: 100%;
+}
 
 .App {
   display: grid;
