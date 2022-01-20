@@ -1,5 +1,4 @@
 import React from 'react';
-import Beers from '../data/data.json';
 
 export default class FetchBeers extends React.Component {
   constructor(props) {

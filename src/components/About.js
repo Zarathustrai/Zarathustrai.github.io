@@ -11,7 +11,7 @@ export default class About extends React.Component {
         <div>
           <div className="content">
             <div className="centerContent">
-              <h1>Beer Database</h1>
+              <h1>Our Beer Collection</h1>
               <FetchBeers/>
             </div>
           </div>

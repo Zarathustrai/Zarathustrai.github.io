@@ -73,7 +73,7 @@ export default class Questions extends React.Component {
         }
       );
     } else if (attribute === "aroma") {
-      let question = "What " + attribute + " beer do you like?";
+      let question = "What " + attribute + " appeals you?";
       return ({
         "question": question,
         "answer1": "Fruit",
@@ -90,14 +90,14 @@ export default class Questions extends React.Component {
         }
       );
     } else if (this.state.attributeList[this.state.questionCount][0] === "flavours") {
-      let question = "Do you like the flavour " + attribute + "?";
+      let question = "Do you like " + attribute + " flavor?";
       return ({
         "question": question,
-        "answer1": "I love it",
+        "answer1": "I really like it",
         "answer2": "I like it",
-        "answer3": "I'm not sure/neutral",
-        "answer4": "I don't like it",
-        "answer5": "I hate it",
+        "answer3": "I'm not sure / neutral",
+        "answer4": "I dislike it",
+        "answer5": "I really dislike it",
         }
       );
     } else if (attribute ==="origin") {
