@@ -54,7 +54,7 @@ export default class Questions extends React.Component {
       );
 
     } else if (attribute === "abv") {
-      question = "How strong do you like your beer?";
+      question = "How strong do you want your beer to be?";
       let name = attribute + "Attribute";
       this.analysis = {
         ...this.analysis,
@@ -533,7 +533,7 @@ export default class Questions extends React.Component {
         answers.push(
           <>
           <div name={values[value]} className="answer unselectable" key={values[value]}>Between:</div>
-          <div key={values[value]} name="slider" className="rangeSlider answer">
+          <div key={values[value]} name="slider" className="answer-slider rangeSlider">
             <div className="values small">
               <span id="range1">
                 0
@@ -692,7 +692,7 @@ export default class Questions extends React.Component {
                   </>
                 </div>
               </div>
-              <div class="logo"></div>
+
               <button className="fancyButton reset small fat" onClick={() => {this.setState({data: {}}); this.setState({questionCount: 0}); this.props.clearData()}}>reset</button>
             </div>
 

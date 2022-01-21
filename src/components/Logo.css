@@ -1,22 +1,12 @@
-.img-smoll{
-    height:150px;
-    width:150px;
-    display: compact;
-    justify-content:center; /* horizontally center */
-    align-items:center;    /* vertically center */
-    position: fixed;
-    bottom: -76px;
-    right: 0;
-    background:transparent;
-}
-.img-big{
+.logo {
     height:178px;
-    width:178px;
+    width:100px;
     display: compact;
     justify-content:center; /* horizontally center */
     align-items:center;    /* vertically center */
     position: absolute;
-    bottom: 622px;
-    right: 1260px;
+    bottom: 0;
+    left:0;
     background:transparent;
+    content:url("./data/images/logo_text.png");
 }

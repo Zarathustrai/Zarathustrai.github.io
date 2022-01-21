@@ -6,8 +6,7 @@ console.log(logo);
 function Header() {
     return(
         <div>
-            <img className="img-smoll" src={logo} alt="" />
-            <img className="img-big" src={logo} alt="" />
+            <img className="logo"/>
         </div>
     )
 }
