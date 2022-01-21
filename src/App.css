@@ -33,7 +33,7 @@
 }
 
 .logo {
-  content:url("./logo_text.png");
+  content:url("./components/data/images/logo_text.png");
   position: absolute;
   margin-top: auto;
   margin-top: calc(70vh - 8ch);
