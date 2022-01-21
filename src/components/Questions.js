@@ -435,7 +435,7 @@ export default class Questions extends React.Component {
   }
 
   componentDidMount() {
-    const url = "http://localhost:3000/beers";
+    const url = "https://test-1bd08-default-rtdb.europe-west1.firebasedatabase.app/beers";
     fetch(url)
       .then(response => response.json())
       .then(beers => this.setState({beers}))
