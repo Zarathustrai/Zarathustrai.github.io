@@ -6,31 +6,44 @@ export default class FetchBeers extends React.Component {
 
     this.state = {
       beers: null,
+      render: false,
     };
   }
 
   componentDidMount() {
-    const url = "https://test-1bd08-default-rtdb.europe-west1.firebasedatabase.app/beers";
-    fetch(url)
+    this.setState({render: false});
+    const url = "https://api.jsonbin.io/b/61ea9776a785682f9719f382";
+    fetch(url, {
+      headers: {
+        "secret-key": "$2b$10$KmJxZbbdQOIyizb54EKujOIIWwd.vFh4E0B3efAua8t9T/tLf5HV6"
+      }
+    })
       .then(response => response.json())
-      .then(beers => this.setState({beers}));
+      .then(beers => {console.log(beers); this.setState({beers});})
+      .then(() => this.setState({beers: JSON.parse(JSON.stringify(this.state.beers)).beers}))
+      .then(() => this.setState({render: true}));
   }
 
   render() {
-    return (
-      <div className="cards">
-        <>
-        {this.state.beers?.map(({name, abv, flavours, description, imagesrc}) => (
-          <div key={name} className="card">
-            <div className="beer">
-              <img src={imagesrc} />
+    if (this.state.render) {
+      return (
+        <div className="cards">
+          <>
+          {this.state.beers?.map(({name, abv, flavours, description, imagesrc}) => (
+            <div key={name} className="card">
+              <div className="beer">
+                <img src={imagesrc} />
+              </div>
+              <h2>{name + " " + abv}</h2>
+              <p>{description}</p>
             </div>
-            <h2>{name + " " + abv}</h2>
-            <p>{description}</p>
-          </div>
-        ))}
-        </>
-      </div>
+          ))}
+          </>
+        </div>
+      )
+    }
+    return (
+      <div className="medium">Loading Beers</div>
     )
   }
 }
