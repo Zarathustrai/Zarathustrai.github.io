@@ -435,10 +435,15 @@ export default class Questions extends React.Component {
   }
 
   componentDidMount() {
-    const url = "https://test-1bd08-default-rtdb.europe-west1.firebasedatabase.app/beers";
-    fetch(url)
+    const url = "https://api.jsonbin.io/b/61ea9776a785682f9719f382";
+    fetch(url, {
+      headers: {
+        "secret-key": "$2b$10$KmJxZbbdQOIyizb54EKujOIIWwd.vFh4E0B3efAua8t9T/tLf5HV6"
+      }
+    })
       .then(response => response.json())
-      .then(beers => this.setState({beers}))
+      .then(beers => {console.log(beers); this.setState({beers});})
+      .then(() => this.setState({beers: JSON.parse(JSON.stringify(this.state.beers)).beers}))
       .then(() => this.setAttributes())
       .then(() => this.setState({questionCount: 0}))
       .then(() => this.setState({flavourCount: 0}))
