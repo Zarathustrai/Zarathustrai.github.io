@@ -32,12 +32,29 @@
   --background: var(--background-h), var(--background-s), var(--background-l);
 }
 
+.logo {
+  content:url("./logo_text.png");
+  position: absolute;
+  margin-top: auto;
+  margin-top: calc(70vh - 8ch);
+  margin-right: calc(clamp(320px, 50vw, 100%) - 5vw);
+  width: 8ch;
+}
+
+.unselectable {
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Standard */
+}
+
 .hidden {
   display: none !important;
 }
 
 .rangeSlider {
   position: relative;
+  margin-top: 2ch;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -228,6 +245,8 @@ h1 {
 
 .question {
   width: 100%;
+  height: 5ch;
+  margin: 0px;
 }
 
 .App {
@@ -313,6 +332,11 @@ h1 {
   color: hsla(var(--sdark));
 }
 
+.answer {
+  width: 15ch;
+  margin-inline: auto;
+}
+
 .content {
   display: flex;
   justify-items: stretch;
@@ -328,7 +352,7 @@ h1 {
   flex-wrap: nowrap;
   justify-content: flex-start;
   align-items: center;
-  align-content: stretch;
+  align-content: center;
   width: clamp(320px, 50vw, 100%);
   border: 2px solid black;
   border-radius: 10px;

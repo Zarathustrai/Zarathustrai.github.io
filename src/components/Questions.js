@@ -18,8 +18,13 @@ export default class Questions extends React.Component {
       data: {},
     };
     this.sliderLoaded = false;
+    this.analysis = {};
   }
 
+    onTrigger = (event) => {
+      this.props.parentCallback(event.target.myname.value);
+      event.preventDefault();
+    }
 
     shouldComponentUpdate(nextProps, nextState) {
       if((this.state.render || nextState.render) && (this.props.isVisible || nextProps.isVisible)) {
@@ -30,23 +35,49 @@ export default class Questions extends React.Component {
     }
 
   questionKnowledgeSystem(attribute) {
+    let question = "";
+
     if (attribute === "price") {
+      question = "What is your budget?"
+      let name = attribute + "Attribute";
+      this.analysis = {
+        ...this.analysis,
+        [question]: name
+      }
+
       return ({
-        "question": "What is your budget?",
+        "question": question,
         "answer1": "Show everything",
         "answer2": "insertRange"
         }
+
       );
+
     } else if (attribute === "abv") {
+      question = "How strong do you like your beer?";
+      let name = attribute + "Attribute";
+      this.analysis = {
+        ...this.analysis,
+        [question]: name
+      }
+
       return ({
-        "question": "How strong do you like your beer?",
+        "question": question,
         "answer1": "Show everything",
         "answer2": "insertRange"
         }
       );
+
     } else if (attribute === "brewery") {
+      question = "Which one of these popular breweries do you like?";
+      let name = attribute + "Attribute";
+      this.analysis = {
+        ...this.analysis,
+        [question]: name
+      }
+
       return ({
-        "question": "Which one of these popular breweries do you like?",
+        "question": question,
         "answer1": "Budweiser",
         "answer2": "Heineken",
         "answer3": "Stella Artois",
@@ -55,9 +86,17 @@ export default class Questions extends React.Component {
         "answer6": "I don't like any of those / I don't know"
         }
       );
+
     } else if (attribute === "style") {
+      question = "What style beer do you like?";
+      let name = attribute + "Attribute";
+      this.analysis = {
+        ...this.analysis,
+        [question]: name
+      }
+
       return ({
-        "question": "What style beer do you like?",
+        "question": question,
         "answer1": "Blond",
         "answer2": "Brown",
         "answer3": "White / Wheat",
@@ -72,8 +111,15 @@ export default class Questions extends React.Component {
         "answer 12": "I don't know"
         }
       );
+
     } else if (attribute === "aroma") {
-      let question = "What " + attribute + " beer do you like?";
+      question = "What " + attribute + " beer do you like?";
+      let name = attribute + "Attribute";
+      this.analysis = {
+        ...this.analysis,
+        [question]: name
+      }
+
       return ({
         "question": question,
         "answer1": "Fruit",
@@ -89,8 +135,15 @@ export default class Questions extends React.Component {
         "answer11": "I don't know / I don't care"
         }
       );
+
     } else if (this.state.attributeList[this.state.questionCount][0] === "flavours") {
-      let question = "Do you like the flavour " + attribute + "?";
+      question = "Do you like the flavour " + attribute + "?";
+      let name = attribute + "Attribute";
+      this.analysis = {
+        ...this.analysis,
+        [question]: name
+      }
+
       return ({
         "question": question,
         "answer1": "I love it",
@@ -100,8 +153,15 @@ export default class Questions extends React.Component {
         "answer5": "I hate it",
         }
       );
+
     } else if (attribute ==="origin") {
-      let question = "What is your preferred beer " + attribute + "?";
+      question = "What is your preferred beer " + attribute + "?";
+      let name = attribute + "Attribute";
+      this.analysis = {
+        ...this.analysis,
+        [question]: name
+      }
+
       return ({
         "question": question,
         "answer1": "Belgium",
@@ -299,6 +359,12 @@ export default class Questions extends React.Component {
         break;
       }
     }
+
+    this.analysis = {
+      ...this.analysis,
+      beerList: beerScore
+    }
+
     let title = "Results"
     let slider = false;
     return [title, results, slider];
@@ -415,15 +481,26 @@ export default class Questions extends React.Component {
       else if (value === "iHateIt")           value = -3;
     }
     if (typeof value === 'string' && (value.includes("don't know") || value.includes("everything"))) {
+      this.updateQuestionState();
       return;
     }
     //console.log([name, value]);
+
     this.setState({
       data: {
         ...this.state.data,
         [name]: value
       }
     });
+
+    this.analysis = {
+      ...this.analysis,
+      [name]: value
+    }
+
+    this.props.updateState(this.analysis);
+    if (!(e.target.getAttribute('id') === 'slider-1' || e.target.getAttribute('id') === 'slider-2')) this.updateQuestionState();
+    return;
   }
 
   qAndA() {
@@ -449,7 +526,9 @@ export default class Questions extends React.Component {
       if(values[value] === "insertRange") {
         if (!this.sliderLoaded) this.sliderLoaded = true;
         answers.push(
-          <div key={values[value]} name="slider" className="rangeSlider">
+          <>
+          <div name={values[value]} className="answer unselectable" key={values[value]}>Between:</div>
+          <div key={values[value]} name="slider" className="rangeSlider answer">
             <div className="values small">
               <span id="range1">
                 0
@@ -463,10 +542,12 @@ export default class Questions extends React.Component {
               <input type="range" min="0" max="20" value={this.state.sliderOneValue} id="slider-1" onChange={(e) => {this.recordValue(e); this.sliders(1);}}/>
               <input type="range" min="0" max="20" value={this.state.sliderTwoValue} id="slider-2" onChange={(e) => {this.recordValue(e); this.sliders(2);}}/>
             </div>
-          </div>);
+          </div>
+          </>
+        );
       } else {
         if (this.sliderLoaded) this.sliderLoaded = false;
-        answers.push(<div name={values[value]} className="clickable" key={values[value]} onClick={(e) => this.recordValue(e)}>{values[value]}</div>);
+        answers.push(<div name={values[value]} className="clickable answer unselectable" key={values[value]} onClick={(e) => this.recordValue(e)}>{values[value]}</div>);
       }
     }
     return [question, answers, this.sliderLoaded];
@@ -543,6 +624,7 @@ export default class Questions extends React.Component {
     }
     if (this.state.content[0] !== this.qAndA()[0]) {
       this.setState({content: this.qAndA()});
+      this.props.updateState(this.analysis);
     }
     if ((!prevState.render && this.state.render) || (!prevState.isVisible && this.state.isVisible) || (prevState.content[2] !== this.state.content[2] && this.state.content[2])) {
       if(this.state.content[2]) this.sliders(3);
@@ -574,11 +656,15 @@ export default class Questions extends React.Component {
 
             <div className="centerContent small">
 
-              <div className="question fat">
-                <p className="medium">{this.state.content[0]}</p>
-                {this.state.content[1]}
+              <div className="fat">
+                <div className="medium question unselectable">
+                  {this.state.content[0]}
+                </div>
+                <div className="answers">
+                  {this.state.content[1]}
+                </div>
               </div>
-
+              <div class="logo"></div>
               <button className="fancyButton continue small fat" onClick={() => this.updateQuestionState()}>next</button>
             </div>
 
@@ -601,8 +687,8 @@ export default class Questions extends React.Component {
                   </>
                 </div>
               </div>
-
-              <button className="fancyButton reset small fat" onClick={() => this.setState({questionCount: 0})}>reset</button>
+              <div class="logo"></div>
+              <button className="fancyButton reset small fat" onClick={() => {this.setState({data: {}}); this.setState({questionCount: 0}); this.props.clearData()}}>reset</button>
             </div>
 
             <div className="rightContent"></div>
