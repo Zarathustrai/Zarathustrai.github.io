@@ -1,4 +1,3 @@
-import logo from './logo192.png';
 import './App.css';
 import RenderPage from './components/RenderPage';
 
