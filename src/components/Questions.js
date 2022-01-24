@@ -693,7 +693,7 @@ export default class Questions extends React.Component {
                 </div>
               </div>
 
-              <button className="fancyButton reset small fat" onClick={() => {this.setState({data: {}}); this.setState({questionCount: 0}); this.props.clearData()}}>reset</button>
+              <button className="fancyButton reset small fat" onClick={() => {this.setState({data: {}}); this.setState({questionCount: 0}); this.props.clearData()}}>RESET</button>
             </div>
 
             <div className="rightContent"></div>

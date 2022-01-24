@@ -1,5 +1,5 @@
 import React from 'react';
-
+import './../App.css'
 import RenderForm from './RenderForm';
 
 export default class Analysis extends React.Component {
@@ -23,13 +23,13 @@ export default class Analysis extends React.Component {
         contents.push(
           <>
             <div><br/></div>
-            <div className="lineAnalysis">Resulting list of beer scores:</div>
+            <b><div className="lineAnalysis">Resulting list of beer scores: </div></b><br/>
           </>
         );
         for (let beer in this.props.data[line]) {
           contents.push(
             <>
-              <div className="lineAnalysis">{this.props.data[line][beer].toString()}</div>
+              <b><div className="lineAnalysis">{this.props.data[line][beer].toString()}</div></b>
             </>
           );
         }
@@ -55,7 +55,7 @@ export default class Analysis extends React.Component {
           contents.push(
             <>
               <div><br/></div>
-              <div className="lineAnalysis">Question asked: {line}</div>
+              <b><div className="lineAnalysis">Question asked: {line}</div></b><br/>
               <div className="lineAnalysis">Fact gained: {factName}: {factData.toString()}</div>
             </>
           );
@@ -63,8 +63,8 @@ export default class Analysis extends React.Component {
           contents.push(
             <>
               <div><br/></div>
-              <div className="lineAnalysis">Question asked: {line}</div>
-              <div className="lineAnalysis">No fact gained</div>
+              <b><div className="lineAnalysis">Question asked: {line}</div></b><br/>
+              <div className="lineAnalysis analysis-color">No fact gained</div>
             </>
           );
         }

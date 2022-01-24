@@ -170,6 +170,7 @@ html {
 
 .small {
     font-size: max(1ch, 1.3vw);
+    position: center;
 }
 
 h1 {
@@ -233,6 +234,13 @@ h1 {
 .no, .reset {
     background-color: hsl(var(--red));
     border: 2px solid hsl(var(--red));
+    position: absolute;
+    text-align: center;
+    right: 1%;
+    bottom: -8%;
+    padding: 16px 24px 16px 24px;
+    /*padding-bottom: 16px;*/
+    /*padding-right: 16px;*/
 }
 .no:hover, .reset:hover {
     background-color: hsl(var(--red));
@@ -258,6 +266,9 @@ h1 {
     font-family: verdana, arial;
     scroll-behavior: smooth;
     cursor: default;
+}
+.analysis-color{
+    color: #F15025;
 }
 
 .topbar {
@@ -326,15 +337,16 @@ h1 {
     height: 100%;
 }
 
-.clickable:hover, .clickable:active {
+.clickable:hover{
     cursor: pointer;
     color: hsla(var(--sdark));
 }
 
 
-.clickable:focus {
+.clickable:focus, .clickable:active {
     color: hsla(var(--sdark));
 }
+
 
 .answer {
     width: 25ch;
@@ -364,9 +376,9 @@ h1 {
     justify-content: flex-start;
     align-items: center;
     align-content: center;
-    width: clamp(320px, 50vw, 100%);
-    border: 2px solid black;
-    border-radius: 10px;
+    width: 75%;
+    /*border: 2px solid black;*/
+    /*border-radius: 10px;*/
     padding: max(3vh, 1rem);
     margin-inline: auto;
     overflow-y: auto;
@@ -406,7 +418,7 @@ h1 {
     width: calc(100% - 2em);
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(20rem,1fr));
-    grid-gap: 3em;
+    grid-gap: 2em;
     margin-inline: auto;
     justify-items: center;
 }
@@ -418,8 +430,7 @@ h1 {
     align-items: center;
     justify-content: stretch;
     padding: 1em;
-    min-height: 10rem;
-    max-height: 20rem;
+    height: 30rem;
     max-width: 20rem;
     border: 2px solid black;
     border-radius: 10px;
