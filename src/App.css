@@ -186,7 +186,7 @@ h1 {
 }
 
 .big {
-    font-size: max(6ch, 5vw);
+    font-size: max(12ch, 10vw);
 }
 
 .fancyButton {
@@ -217,6 +217,11 @@ h1 {
 }
 
 .yes, .continue {
+    position: absolute;
+    text-align: center;
+    right: 2%;
+    bottom: -8%;
+    padding: 16px 29px 16px 29px;
     background-color: hsl(var(--green));
     border: 2px solid hsl(var(--green));
 }
@@ -227,7 +232,7 @@ h1 {
 .yes:focus, .continue:focus, .yes:focus:hover, .continue:focus:hover {
     border: 5px solid hsl(var(--green-h), var(--green-s), calc(var(--green-l)*0.8));
 }
-.yes:active, .continue:active, .yes:active:hover, .continue:active:hover {
+.yes:active:hover, .continue:active:hover {
     color: hsl(var(--green));
 }
 
@@ -270,6 +275,9 @@ h1 {
 .analysis-color{
     color: #F15025;
 }
+.division{
+    height: 15%;
+}
 
 .topbar {
     display: flex;
@@ -309,9 +317,9 @@ h1 {
 }
 
 .navbar {
-    min-width: 45vw;
-    max-width: 100vw;
-    width: clamp(320px, 50vw, 100%);
+    min-width: 95%;
+    max-width: 95%;
+    /*width: clamp(320px, 50vw, 100%);*/
 
     display: flex;
     flex-direction: row;
@@ -417,7 +425,7 @@ h1 {
     /*sets the container as a grid with variable number of columns*/
     width: calc(100% - 2em);
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(20rem,1fr));
+    grid-template-columns: 3;
     grid-gap: 2em;
     margin-inline: auto;
     justify-items: center;

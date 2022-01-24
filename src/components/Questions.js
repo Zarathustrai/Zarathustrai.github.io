@@ -662,6 +662,7 @@ export default class Questions extends React.Component {
             <div className="centerContent small">
 
               <div className="fat">
+                <div className="division"/>
                 <div className="medium question unselectable">
                   {this.state.content[0]}
                 </div>
@@ -669,8 +670,7 @@ export default class Questions extends React.Component {
                   {this.state.content[1]}
                 </div>
               </div>
-              <div class="logo"></div>
-              <button className="fancyButton continue small fat" onClick={() => this.updateQuestionState()}>next</button>
+              <button className="fancyButton continue small fat" onClick={() => this.updateQuestionState()}>Next</button>
             </div>
 
             <div className="rightContent"></div>
@@ -693,7 +693,7 @@ export default class Questions extends React.Component {
                 </div>
               </div>
 
-              <button className="fancyButton reset small fat" onClick={() => {this.setState({data: {}}); this.setState({questionCount: 0}); this.props.clearData()}}>RESET</button>
+              <button className="fancyButton reset small fat" onClick={() => {this.setState({data: {}}); this.setState({questionCount: 0}); this.props.clearData()}}>Reset</button>
             </div>
 
             <div className="rightContent"></div>
