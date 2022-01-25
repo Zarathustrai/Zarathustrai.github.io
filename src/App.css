@@ -167,10 +167,19 @@ html {
     font-family: 'Bebas Neue';
     letter-spacing: 0.3ch;
 }
-
+.smallmedium{
+    font-size: max(1.5ch, 1.8vw);
+    position: center;
+}
 .small {
     font-size: max(1ch, 1.3vw);
     position: center;
+    /*text-align: center;*/
+}
+.cardtext{
+    font-size: max(1ch, 1.3vw);
+    position: center;
+    text-align: center;
 }
 
 h1 {
@@ -219,7 +228,7 @@ h1 {
 .yes, .continue {
     position: absolute;
     text-align: center;
-    right: 2%;
+    right: 1%;
     bottom: -8%;
     padding: 16px 29px 16px 29px;
     background-color: hsl(var(--green));
@@ -377,14 +386,14 @@ h1 {
 }
 
 .centerContent {
-    height: 70vh;
+    height: 80vh;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: flex-start;
     align-items: center;
     align-content: center;
-    width: 75%;
+    width: 78%;
     /*border: 2px solid black;*/
     /*border-radius: 10px;*/
     padding: max(3vh, 1rem);
@@ -425,8 +434,8 @@ h1 {
     /*sets the container as a grid with variable number of columns*/
     width: calc(100% - 2em);
     display: grid;
-    grid-template-columns: 3;
-    grid-gap: 2em;
+    grid-template-columns: auto auto auto;
+    grid-gap: 5em;
     margin-inline: auto;
     justify-items: center;
 }
@@ -438,9 +447,10 @@ h1 {
     align-items: center;
     justify-content: stretch;
     padding: 1em;
-    height: 30rem;
     max-width: 20rem;
-    border: 2px solid black;
+    min-height: 10rem;
+    max-height: 60rem;
+    border: 2px white;
     border-radius: 10px;
 
     background: hsl(calc(var(--background-h)*1.1) calc(var(--background-s)*1.1) calc(var(--background-l)*1.1));
@@ -467,7 +477,7 @@ h1 {
     background-position: center;
     background-size: cover;
     padding-top: 56.25%;
-    width: 15rem;
+    width: 20rem;
     border-radius: 10px;
     height: auto;
 }
@@ -475,7 +485,8 @@ h1 {
 img {
     margin-top: -56.25%;
     position: relative;
-    width: 100%;
+    max-width: 20rem;
+    max-height: 20rem;
     object-fit: contain;
 }
 
