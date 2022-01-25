@@ -97,6 +97,11 @@ input, select {
 /* END CSS RESET */
 
 
+.center {
+  text-align: center;
+  margin-inline: auto;
+}
+
 .unselectable {
     -webkit-user-select: none; /* Safari */
     -moz-user-select: none; /* Firefox */
@@ -408,7 +413,7 @@ h1 {
     align-content: center;
     justify-content: space-between;
     margin-inline: auto;
-    margin-bottom: 30px;
+    margin-bottom: 0;
     background: hsl(var(--background));
 }
 

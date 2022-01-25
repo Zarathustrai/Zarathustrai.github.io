@@ -348,8 +348,8 @@ export default class Questions extends React.Component {
         console.log(this.state.beers[beerList[beer]]);
         results.push(
           <div key={this.state.beers[beerList[beer]].name} className="card">
-            <div className="beer">
-              <img src={this.state.beers[beerList[beer]].imagesrc} />
+            <div className="beer center">
+              <img className="center" src={this.state.beers[beerList[beer]].imagesrc} />
             </div>
             <h4 className="font smallmedium">{this.state.beers[beerList[beer]].name + " (" + this.state.beers[beerList[beer]].abv+")"}</h4>
             <text className="cardtext">{this.state.beers[beerList[beer]].description}</text>

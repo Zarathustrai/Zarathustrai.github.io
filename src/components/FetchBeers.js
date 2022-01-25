@@ -12,7 +12,7 @@ export default class FetchBeers extends React.Component {
 
   componentDidMount() {
     this.setState({render: false});
-    const url = "https://api.jsonbin.io/b/61ea9776a785682f9719f382";
+    const url = "https://api.jsonbin.io/b/61ea9776a785682f9719f382/latest";
     fetch(url, {
       headers: {
         "secret-key": "$2b$10$KmJxZbbdQOIyizb54EKujOIIWwd.vFh4E0B3efAua8t9T/tLf5HV6"
@@ -31,8 +31,8 @@ export default class FetchBeers extends React.Component {
           <>
           {this.state.beers?.map(({name, abv, flavours, description, imagesrc}) => (
             <div key={name} className="card">
-              <div className="beer">
-                <img src={imagesrc} />
+              <div className="beer center">
+                <img className="center" src={imagesrc} />
               </div>
               <h4 className="font smallmedium">{name + " " + abv}</h4>
               <text className="cardtext">{description}</text>
