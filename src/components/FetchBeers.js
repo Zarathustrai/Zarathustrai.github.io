@@ -34,7 +34,7 @@ export default class FetchBeers extends React.Component {
               <div className="beer center">
                 <img className="center" src={imagesrc} />
               </div>
-              <h4 className="font smallmedium">{name + " " + abv}</h4>
+              <h4 className="font smallmedium">{name + " " + abv}</h4><br/>
               <text className="cardtext">{description}</text>
             </div>
           ))}
