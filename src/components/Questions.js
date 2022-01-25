@@ -435,7 +435,7 @@ export default class Questions extends React.Component {
   }
 
   componentDidMount() {
-    const url = "https://api.jsonbin.io/b/61ea9776a785682f9719f382";
+    const url = "https://api.jsonbin.io/b/61ea9776a785682f9719f382/latest";
     fetch(url, {
       headers: {
         "secret-key": "$2b$10$KmJxZbbdQOIyizb54EKujOIIWwd.vFh4E0B3efAua8t9T/tLf5HV6"
