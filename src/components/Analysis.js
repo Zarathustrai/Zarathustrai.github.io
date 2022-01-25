@@ -55,16 +55,22 @@ export default class Analysis extends React.Component {
           contents.push(
             <>
               <div><br/></div>
-              <b><div className="lineAnalysis">Question asked: {line}</div></b><br/>
-              <div className="lineAnalysis">Fact gained: {factName}: {factData.toString()}</div>
+              <br/><div className="log_output">
+              <div className="div-ver"/>
+              <b><div className="lineAnalysis font">Question asked: {line}</div><br/>
+                <div className="lineAnalysis analysis-color-yes">Fact gained: {factName}: {factData.toString()}</div></b>
+            </div>
             </>
           );
         } else {
           contents.push(
-            <>
-              <div><br/></div>
-              <b><div className="lineAnalysis">Question asked: {line}</div></b><br/>
-              <div className="lineAnalysis analysis-color">No fact gained</div>
+              <>
+                <div><br/></div>
+                <br/><div className="log_output">
+                <div className="div-ver"/>
+                <b><div className="lineAnalysis font">Question asked: {line}</div><br/>
+                  <div className="lineAnalysis analysis-color-no">No fact gained</div></b>
+              </div>
             </>
           );
         }
