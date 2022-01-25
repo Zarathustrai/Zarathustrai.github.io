@@ -561,6 +561,8 @@ h1 {
 .div-ver{
     height: 25%;
 }
+
+
 .log_output {
     border:3px solid #f28c64;
     color: #ffffff;
@@ -571,6 +573,32 @@ h1 {
     height:100px;
     display: block;
     position: relative;
+}
+#customers {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#customers td, #customers th {
+    border:3px solid #f28c64;
+    color: #ffffff;
+    padding: 8px;
+    width: 100px;
+    height:100%;
+    overflow: hidden;
+}
+
+#customers tr:nth-child(even){background-color: #ffc023;}
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #f28c64;
+    color: white;
 }
 
 .beer {

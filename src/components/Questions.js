@@ -320,6 +320,7 @@ export default class Questions extends React.Component {
           }
         }
       }
+      points = Math.round(points * 100) / 100;
       beerScore.push([beer.name, points]);
       //console.log("beerScore");
       //console.log([beer.name, points]);

@@ -27,9 +27,21 @@ export default class Analysis extends React.Component {
           </>
         );
         for (let beer in this.props.data[line]) {
+          let beerScore = [];
+          beerScore = this.props.data[line][beer].toString().split(",")
           contents.push(
             <>
-              <b><div className="lineAnalysis">{this.props.data[line][beer].toString()}</div></b>
+              <table id="customers">
+                <tr>
+                  <th>Beer Name</th>
+                  <th>Score</th>
+                </tr>
+                <tr>
+                  <td>{beerScore[0]}</td>
+                  <td>{beerScore[1]}</td>
+                </tr>
+              </table>
+              {/*<b><div className="lineAnalysis">{this.props.data[line][beer].toString()}</div></b>*/}
             </>
           );
         }
@@ -58,7 +70,7 @@ export default class Analysis extends React.Component {
               <br/><div className="log_output">
               <div className="div-ver"/>
               <b><div className="lineAnalysis font">Question asked: {line}</div><br/>
-                <div className="lineAnalysis analysis-color-yes">Fact gained: {factName}: {factData.toString()}</div></b>
+                <div className="lineAnalysis analysis-color-yes">[Fact gained] {factName}: {factData.toString()}</div></b>
             </div>
             </>
           );
