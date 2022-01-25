@@ -662,7 +662,6 @@ export default class Questions extends React.Component {
             <div className="centerContent small">
 
               <div className="fat">
-                <div className="division"/>
                 <div className="medium question unselectable">
                   {this.state.content[0]}
                 </div>

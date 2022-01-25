@@ -32,6 +32,70 @@
     --background: var(--background-h), var(--background-s), var(--background-l);
 }
 
+/* CSS reset */
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+  display: block;
+}
+
+nav ul {
+  list-style :none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input, select {
+  vertical-align :middle;
+}
+/* END CSS RESET */
+
 
 .unselectable {
     -webkit-user-select: none; /* Safari */
@@ -177,7 +241,8 @@ html {
     /*text-align: center;*/
 }
 .cardtext{
-    font-size: max(1ch, 1.3vw);
+    font-size: max(0.8ch, 1.1vw);
+    font-weight: normal;
     position: center;
     text-align: center;
 }
@@ -198,12 +263,23 @@ h1 {
     font-size: max(12ch, 10vw);
 }
 
+.logo {
+  min-width: 50px;
+  width: 4vw;
+  display: compact;
+  justify-content:center; /* horizontally center */
+  align-items:center;    /* vertically center */
+  position: absolute;
+  background:transparent;
+  content:url("./components/data/images/logo_text.png");
+  left: 0%;
+  bottom: 0%;
+}
+
 .fancyButton {
-    margin-top: calc(70vh - 10vh);
-    margin-left: calc(clamp(320px, 50vw, 100%) - 10vw);
     position: absolute;
     background-color: hsl(var(--black));
-    padding-block: 3vh;
+    padding-block: 3vw;
     padding-inline: 3vw;
     color: white;
     font-size: max(1ch, 1.3vw);
@@ -213,6 +289,9 @@ h1 {
     margin-bottom: 80px;
     transform: translate3d(0, 0, 0);
     transition: all 0.2s ease;
+
+    right: 1%;
+    bottom: calc(1% - 3vw);
 }
 .fancyButton:hover {
     transform: translate(0px, -4px);
@@ -228,8 +307,6 @@ h1 {
 .yes, .continue {
     position: absolute;
     text-align: center;
-    right: 1%;
-    bottom: -8%;
     padding: 16px 29px 16px 29px;
     background-color: hsl(var(--green));
     border: 2px solid hsl(var(--green));
@@ -250,8 +327,6 @@ h1 {
     border: 2px solid hsl(var(--red));
     position: absolute;
     text-align: center;
-    right: 1%;
-    bottom: -8%;
     padding: 16px 24px 16px 24px;
     /*padding-bottom: 16px;*/
     /*padding-right: 16px;*/
@@ -283,9 +358,6 @@ h1 {
 }
 .analysis-color{
     color: #F15025;
-}
-.division{
-    height: 15%;
 }
 
 .topbar {
@@ -337,6 +409,7 @@ h1 {
     align-content: center;
     justify-content: space-between;
     margin-inline: auto;
+    margin-bottom: 30px;
     background: hsl(var(--background));
 }
 
@@ -438,6 +511,7 @@ h1 {
     grid-gap: 5em;
     margin-inline: auto;
     justify-items: center;
+    padding-top: 2ch;
 }
 
 .card {
@@ -525,4 +599,3 @@ img {
     min-width: 12ch;
     max-width: 30ch;
 }
-
