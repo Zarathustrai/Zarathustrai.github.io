@@ -424,7 +424,7 @@ h1 {
     align-items: center;
     font-size: 2ch;
     width: 14ch;
-    height: 100%;
+    height: 50%;
 }
 
 .clickable:hover{
@@ -505,7 +505,8 @@ h1 {
 .cards {
     position: relative;
     /*sets the container as a grid with variable number of columns*/
-    width: calc(100% - 2em);
+    /*width: calc(100% - 2em);*/
+    max-width: 95%;
     display: grid;
     grid-template-columns: auto auto auto;
     grid-gap: 5em;
@@ -521,7 +522,8 @@ h1 {
     align-items: center;
     justify-content: stretch;
     padding: 1em;
-    max-width: 20rem;
+    max-width: 95%;
+    /*max-width: 20rem;*/
     min-height: 10rem;
     max-height: 60rem;
     border: 2px white;

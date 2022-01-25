@@ -32,7 +32,7 @@
         ["caramel"]
       ],
       "price": 4.60,
-      "description": "Bolleke - De Koninck is the city beer of Antwerp. It is brewed in the brewery on the Mechelsesteenweg. Duvel Moortgat took over the brewery and gave the brewery a new impulse. Today the old brewery is a true experience center. De Koninck - better known as Het Bolleke - is a light and tasty beer, which you can quickly order a second glass of. Slightly sweet, malty with a hint of caramel, ending with a refined bitterness. Exactly as it should be.",
+      "description": "Bolleke - De Koninck is the city beer of Antwerp. De Koninck - better known as Het Bolleke - is a light and tasty beer, which you can quickly order a second glass of. Slightly sweet, malty with a hint of caramel, ending with a refined bitterness. Exactly as it should be.",
       "imagesrc": "https://www.dekoninck.be/uploads/beers/_360x593_crop_center-center_82_line/bolleke.png",
       "id": 2
     },
@@ -50,7 +50,7 @@
         ["citrus"]
       ],
       "price": "5.40",
-      "description": "Brugse Zot is a goldenblond beer with a rich froth and a fruity flavouring. The beer is brewed with four different kinds of malt and two aromatic varieties of hop which give the beer its unique taste. With an alcochol degrees proof of 6 % Vol it is a well balanced, easy drinking beer with character. Brugse Zot is a natural beer born out of a selection of only the best ingredients. Thanks to the refermentation in the bottle, the beer has a longer natural life.",
+      "description": "Brugse Zot is a goldenblond beer with a rich froth and a fruity flavouring. The beer is brewed with four different kinds of malt and two aromatic varieties of hop which give the beer its unique taste. With an alcochol degrees proof of 6 % Vol it is a well balanced, easy drinking beer with character.",
       "imagesrc": "http://www.bierfamilie.nl/wp-content/uploads/2020/10/Brugse-Zot-blond.png",
       "id": 3
     },
@@ -103,7 +103,7 @@
         ["malty"]
       ],
       "price": 5.20,
-      "description": "Duvel is a natural beer with a subtle bitterness, a refined flavour and a distinctive hop character. The unique brewing process, which takes about 90 days, guarantees a pure character, delicate effervescence and a pleasant sweet taste of alcohol. Apart from pure spring water, which is the main ingredient of beer, barley is the most important raw material. Barley must germinate for five days in the malt house, after which malt remains. The colour of the malt and as a consequence also of the beer is determined by the temperature. Duvel obtains its typical bitterness by adding various varieties of aromatic Slovenian and Czech hops. We use only exclusive hops that are renowned for their constant, outstanding quality. Duvel ferments for the first time in tanks at 20 to 26°C. The brewer uses his own culture for this. The original yeast strain, which Victor Moortgat himself selected in the 1920’s, originates from Scotland. After maturing in storage tanks in which the beer is cooled down to -2°C, the drink is ready for bottling. Thanks to the addition of extra sugars and yeast, the beer ferments again in the bottle. This occurs in warm cellars (24°C) and takes two weeks. Then the beer is moved to cold cellars, where it continues to mature and stabilise for a further six weeks. This extra long maturation period is unique and contributes to the refined flavour and pure taste of Duvel.",
+      "description": "Duvel is a natural beer with a subtle bitterness, a refined flavour and a distinctive hop character. The unique brewing process, which takes about 90 days, guarantees a pure character, delicate effervescence and a pleasant sweet taste of alcohol. Apart from pure spring water, which is the main ingredient of beer, barley is the most important raw material. The colour of the malt and as a consequence also of the beer is determined by the temperature. Duvel obtains its typical bitterness by adding various varieties of aromatic Slovenian and Czech hops.",
       "imagesrc": "https://www.duvel.com/files/contentBuilder/_660x750_crop_center-center_82_line/Duvel_Social_Rebranding_WebsiteStills_DuvelClassic_International_transparant_v3.png",
       "id": 56
     },
@@ -120,7 +120,7 @@
         ["herby"]
       ],
       "price": 4.80,
-      "description": "Gerardus Blond is een sprankelend bitter kloosterbier met een kruidige smaakaanzet. Specerijen en hop geven dit licht zoete bier zijn rijke, ronde smaakbeleving. We brouwen het op basis van een recept van de paters van het Redemptoristenklooster in Wittem. Een deel van de omzet van Gerardus Blond is bestemd voor het behoud van dit prachtige klooster. Bezoek het eens en kom dan ook naar onze brouwerij voor een proeverij. Gerardus Blond is goed te combineren met gerookte forel, salade, gegrilde kip en steak.",
+      "description": "Gerardus Blond is a sparkling bitter monastery beer with a spicy taste attack. Spices and hops give this slightly sweet beer its rich, round taste experience.",
       "imagesrc": "https://www.plus.nl/INTERSHOP/static/WFS/PLUS-Site/-/PLUS/nl_NL/product/L/146675.png",
       "id": 66
     },
@@ -154,7 +154,7 @@
         ["coriander"],
         ["fruity"]
       ],
-      "description": "The gnomes of Fairyland are particularly fond of this golden beer. LA CHOUFFE, with its slight hoppy taste, combining notes of fresh coriander and fruity tones, is the drink which gives them their zest for life. At least, that's what these imps say when they are thirsty. Their secret used to be jealously guarded from one generation to the next until the day they shared the recipe with humans to seal their friendship. Of all the legends from the wonderful region of the Belgian Ardennes, the tale of LA CHOUFFE is the one which most merits re-telling.",
+      "description": "The gnomes of Fairyland are particularly fond of this golden beer. LA CHOUFFE, with its slight hoppy taste, combining notes of fresh coriander and fruity tones, is the drink which gives them their zest for life.",
       "price": 5.40,
       "imagesrc": "http://www.bierfamilie.nl/wp-content/uploads/2020/10/la-chouffe-blond.png",
       "id": 86
@@ -189,7 +189,7 @@
         ["fruity"]
       ],
       "price": 4.80,
-      "description": "In Napoleon's time Pauwel Kwak was a brewer and the owner of the 'De Hoorn' inn in Dendermonde. Mail coaches stopped there every day. But at that time coachmen were not allowed to leave their coach and horses in order to have their thirst quenched along with their passengers. As a result, the inventive innkeeper had a special Kwak glass blown that could be hung on the coach. In this way the coachman had his Kwak beer safely at hand. LOOK: Kwak is recognisable by its deep bright amber colour and a dense, creamy coloured head. The pale wood of the glass holder makes a pleasant contrast with the beer. SMELL: You will smell a mellow, fruity and malty aroma with a slightly spicy character (coriander, hops). Additional earthy and very subtle aromas of banana and perhaps also a whiff of pineapple or mango in the background. TASTE: Discover a very mellow, fruity attack, a nougat-like solidity, and a slightly spicy character with hints of liquorice passing into a warm finish that reminds you of caramelised banana. The bitterness always remains in the background but in the end emerges delicately.",
+      "description": "In Napoleon's time Pauwel Kwak was a brewer and the owner of the 'De Hoorn' inn in Dendermonde. Mail coaches stopped there every day. But at that time coachmen were not allowed to leave their coach and horses in order to have their thirst quenched along with their passengers. As a result, the inventive innkeeper had a special Kwak glass blown that could be hung on the coach. LOOK: Kwak is recognisable by its deep bright amber colour and a dense, creamy coloured head.",
       "imagesrc": "https://banner2.cleanpng.com/20181113/zlb/kisspng-bosteels-pauwel-kwak-beer-bosteels-brewery-ale-5beac927c99f67.1189349015421135758259.jpg",
       "id": 106
     },
@@ -295,7 +295,7 @@
         ["fresh"]
       ],
       "price": 4.20,
-      "description": "\"Cloudy, smooth and mellow, the Blanche de Namur is a very high-quality wheatbeer. From the first sip, you will feel all its roundness and its delicacy that make it an outstanding wheatbeer. Its qualities and the brewery’s know-how earned it the honour of being named the best wheatbeer in the world (2009).\" Description Appearance : Blond, cloudy and milky colour (colloidal turbidity when cold): the cloudiness is created when the beer is cold but can disappear when the beer warms up or is kept in the cold for too long a time. Aroma : Fine fruity, revealing the spices used: coriander and bitter orange. Taste : Mellow beer, thirst-quenching but smooth, slightly acid flavour, powdery consistency on the tongue, not bitter.",
+      "description": "\"Cloudy, smooth and mellow, the Blanche de Namur is a very high-quality wheatbeer. From the first sip, you will feel all its roundness and its delicacy that make it an outstanding wheatbeer.  Taste : Mellow beer, thirst-quenching but smooth, slightly acid flavour, powdery consistency on the tongue, not bitter.",
       "imagesrc": "http://assets.stickpng.com/thumbs/585e5b44cb11b227491c33db.png",
       "id": 166
     },
@@ -345,7 +345,7 @@
         ["sour"],
         ["vanilla"]
       ],
-      "description": "St.Bernardus Tokyo Sounds familiar? You are quite right, because in 2012 we launched a one-off brew on the occasion of the opening of the first St.Bernardus-themed café in the Japanese capital. Eight years later, you can sample our St.Bernardus Tokyo again, albeit with a new recipe! The young Belgian illustrator Jonas Devacht created the artwork for the can, which consists of an impression of Japanese nightlife in the iconic streets of Kanda district, where you can find ‘Brasserie St.Bernardus’. St.Bernardus Tokyo is an unfiltered ale, which has been brewed with a large amount of wheat, holding the middle between a white beer and a saison. St.Bernardus Tokyo is an unfiltered, golden ale, topped off with an impressive white collar. Character, taste, aromas St.Bernardus Tokyo is famed for its hints of citrus, combined with likeable florals of chamomile and fruity yeast aromas of banana and red apple. Attentive beer fans may also detect a hint of clove and vanilla, as well as the typical esters of our unique St.Bernardus yeast. A refreshing beer with a spicy aroma and a slight hint of bitterness and sourness on the back of the palate! A real treat for the more adventurous beer fan.",
+      "description": "St.Bernardus Tokyo is an unfiltered, golden ale, topped off with an impressive white collar. Character, taste, aromas St.Bernardus Tokyo is famed for its hints of citrus, combined with likeable florals of chamomile and fruity yeast aromas of banana and red apple. Attentive beer fans may also detect a hint of clove and vanilla, as well as the typical esters of our unique St.Bernardus yeast. A refreshing beer with a spicy aroma and a slight hint of bitterness and sourness on the back of the palate! A real treat for the more adventurous beer fan.",
       "price": 5.60,
       "imagesrc": "https://www.bodecall.com/images/stories/virtuemart/product/st-bernardus-tokyo.png",
       "id": 196
@@ -451,7 +451,7 @@
         ["malty"]
       ],
       "price": 5.20,
-      "description": "An exceptional quadruple amber. The particularly rich and complex taste palette and the full head are also found in the Gulden Draak 9000 Quadruple. The sweet notes of caramel are, however, reserved for the Gulden Draak Classic. The new recipe based on 4 different malt varieties gives the Gulden Draak 9000 Quadruple a deep golden amber color and a slightly fruity aroma. Together with the soft and slightly sweet taste, this provides a beautifully rounded bouquet with notes of dried fruit. Just like the other specialty beers from Brewery Van Steenberge, Gulden Draak 9000 Quadruple is a high fermentation beer with secondary fermentation. For the secondary fermentation use is made of a wine yeast that not only contributes to the unparalleled taste but also ensures a long-term shelf life with taste evolution.",
+      "description": "An exceptional quadruple amber. The particularly rich and complex taste palette and the full head are also found in the Gulden Draak 9000 Quadruple. The sweet notes of caramel are, however, reserved for the Gulden Draak Classic. The new recipe based on 4 different malt varieties gives the Gulden Draak 9000 Quadruple a deep golden amber color and a slightly fruity aroma. Together with the soft and slightly sweet taste, this provides a beautifully rounded bouquet with notes of dried fruit.",
       "imagesrc": "https://www.speciaalbierpakket.nl/Files/3/9000/9394/ProductPhotos/1000x525/1759472901.png",
       "id": 256
     },
@@ -469,7 +469,7 @@
         ["caramel"]
       ],
       "price": 7.20,
-      "description": "The result of adding American hops to a quadrupel, 10% Jopen Doubting Thomas (aka Ongelovige Thomas) is our interpretation of a quadrupel. A distinct beer with rich malt as the main flavour. The American hops gives it a fruity character. This beer is named after the apostle Thomas, who would not believe that Jesus had risen from the dead. Thomas has his name-day at the start of winter on 21 December. This reddish-brown beer is a genuine winter warmer. Surprisingly rich in flavour and ideal for sipping beside the fireplace. Believe it or not, this is a heavyweight.",
+      "description": "The result of adding American hops to a quadrupel, 10% Jopen Doubting Thomas (aka Ongelovige Thomas) is our interpretation of a quadrupel. A distinct beer with rich malt as the main flavour. The American hops gives it a fruity character. Surprisingly rich in flavour and ideal for sipping beside the fireplace. Believe it or not, this is a heavyweight.",
       "imagesrc": "https://www.jopenbier.nl/app/uploads/2019/04/OngelovigeThomas_75.png",
       "id": 266
     },
@@ -538,7 +538,7 @@
         ["fruity"]
       ],
       "price": 6.20,
-      "description": "Is it a bird? Is it a Plane? IT IS…… THE BIRD OF PREY! OMG! What a phenomenon already! A supernatural IPA chock-full of citra, chinook and mosaic hops. One of the many beers Uiltje Brewing is so, so proud of. Always fresh, and always super hoppy. Is the Bird of Prey out of control? You bet your *ss it is! But if you drink it immediately you’ll probably be able to temper it. And if you don’t drink it ASAP you can tame this bionic bird by storing it in a cool dark place. Otherwise it becomes kryptonite! Our feathery friend is the ideal beer for real life superheroes! Do you sometimes feel a bit adventurous? Well, a can of our sublime Bird of Prey is all you need to start off with, and the adventures will follow subsequently. One of our most precious IPA's, or India Pale Ales if you will. A hoppy and yet kick-in-the-face fresh beer, with an ABV percentage of 5.8%. Drink one can of Bird of Prey, and fly off to your next adventure!",
+      "description": "Is it a bird? Is it a Plane? IT IS…… THE BIRD OF PREY! OMG! What a phenomenon already! A supernatural IPA chock-full of citra, chinook and mosaic hops. One of the many beers Uiltje Brewing is so, so proud of. Always fresh, and always super hoppy. A hoppy and yet kick-in-the-face fresh beer, with an ABV percentage of 5.8%. Drink one can of Bird of Prey, and fly off to your next adventure!",
       "imagesrc": "https://dth50iqs19w2y.cloudfront.net/d9/4c1ee739c043059f1fc1e4d8b0809e/Uitlje-Bird-of-Prey-IPA.png",
       "id": 306
     },
@@ -555,7 +555,7 @@
         ["fruity"]
       ],
       "price": 6.20,
-      "description": "1-2-3 en tot de 4. Het maakt niet uit, dikke lul drie bier! If you are not from the Netherlands please do not translate the name of this beer! (Obviously you are going to now!) However this extraordinary hoppy pale ale was named after a Dutch and even Haarlem’ saying (found out after we made the beer). Awesome hop forward and dry-ridiculously-hopped American Pale Ale. Light/medium bodied and a lot of dank hops in it. The good stuff",
+      "description": "Awesome hop forward and dry-ridiculously-hopped American Pale Ale. Light/medium bodied and a lot of dank hops in it. The good stuff",
       "imagesrc": "https://www.seekpng.com/png/full/439-4394315_dikke-lul-3-bier.png",
       "id": 316
     },
@@ -572,7 +572,7 @@
         ["hoppy"]
       ],
       "price": 8.10,
-      "description": "Tripel madness! Heavily hopped IPA bursting with fresh flavors. You get citrus, pineapple and, tropical fruits from the hops. And watch out for the massive bitterness. It’s a summer fruit explosion! It’s a cruel, cruel world… A Heavy Cross to carry, so you better drink it! Tripel the fruit, tripel the bitterness.",
+      "description": "Tripel madness! Heavily hopped IPA bursting with fresh flavors. You get citrus, pineapple and, tropical fruits from the hops. And watch out for the massive bitterness. It’s a cruel, cruel world… A Heavy Cross to carry, so you better drink it! Tripel the fruit, tripel the bitterness.",
       "imagesrc": "https://www.jopenbier.nl/app/uploads/2021/12/HeavyCross.png",
       "id": 326
     },
@@ -608,7 +608,7 @@
         ["fruity"]
       ],
       "price": 5.80,
-      "description": "Formerly known as Stone Tangerine Express IPA. This ain’t no just-add-juice approach. This one is for adults. We use bountiful whole tangerine purée, which brings pithy, crisp bitterness to the citrus flavor. In addition to the complexities of the tangerine — the likes of which you can only get by using the whole fruit — we judiciously employ just a hint of whole pineapple for a backnote (you’d likely not even pick it out of the mix if we didn’t tell you it was there). We’re not looking for a sweet concoction to appease the “I want my beer to taste like fruit juice” crowd. This is Stone. We like our IPAs to taste like IPAs. Big, bold and not for kids.",
+      "description": "Formerly known as Stone Tangerine Express IPA. This ain’t no just-add-juice approach. This one is for adults. We use bountiful whole tangerine purée, which brings pithy, crisp bitterness to the citrus flavor. In addition to the complexities of the tangerine — the likes of which you can only get by using the whole fruit — we judiciously employ just a hint of whole pineapple for a backnote (you’d likely not even pick it out of the mix if we didn’t tell you it was there).",
       "imagesrc": "https://cdn.shopify.com/s/files/1/0397/3509/products/stone_tangerine_express_hazy_800x.png?v=1595398396",
       "id": 346
     },
@@ -645,7 +645,7 @@
 		["herby"],
         ["fruity"]
 		],
-      "description": "This is what we call chic beer in the south. Gulpener Château Neubourg has a noble bitterness. A superior Pilsner with character, lifted to great heights by a refined combination of fine herbs and acids, blossom and fruit tones and an aromatic barley structure. And also bottled in a beautiful, stylish bottle. Château Neubourg has been awarded a European Beer Star Award, making it one of the top three in the world. A beer to enjoy exclusively! This beer goes well with shellfish, spring vegetables, asparagus, chicken, salad and fresh salmon. ",
+      "description": "This is what we call chic beer in the south. Gulpener Château Neubourg has a noble bitterness. A superior Pilsner with character, lifted to great heights by a refined combination of fine herbs and acids, blossom and fruit tones and an aromatic barley structure. And also bottled in a beautiful, stylish bottle. A beer to enjoy exclusively!",
       "imagesrc": "https://www.beerwulf.com/globalassets/gulpener-chateau-neubourg.33_1_1.png",
       "id": 111
     },
@@ -700,7 +700,7 @@
         ["bittersweet"],
         ["caramel"]
       ],
-      "description": "In 1842, at our brewery in Plzeň, brewer Josef Groll introduced the world to the first golden ‘pilsner’ lager, and changed beer forever. His invention soon became the most popular style of beer on the planet.\n\nWe’ve brewed Pilsner Urquell in the same brewery using the same recipe for over 175 years. Today, we still insist on using traditional methods, like triple decoction and parallel brewing in wooden lagering barrels. It takes longer but means we never compromise on our taste.\n\nPilsner Urquell’s signature flavour balances sweetness from the triple-decocted malt, and bitterness from our Saaz hops. The thick head of dense wet foam adds smoothness and seals in flavour and aroma.\n\nIn every sip of Pilsner Urquell you’ll notice a refreshing crispness from natural carbonation, then subtle caramel tones and a clean finish with a pleasing hoppy bitterness.",
+      "description": "Pilsner Urquell’s signature flavour balances sweetness from the triple-decocted malt, and bitterness from our Saaz hops. The thick head of dense wet foam adds smoothness and seals in flavour and aroma. In every sip of Pilsner Urquell you’ll notice a refreshing crispness from natural carbonation, then subtle caramel tones and a clean finish with a pleasing hoppy bitterness.",
       "imagesrc": "https://www.pikpng.com/pngl/m/329-3291172_download-pilsner-urquell-bottle-transparent-png-mongozo-gluten.png",
       "id": 411
     },
@@ -848,7 +848,7 @@
         ["bitterness", 0.12],
         ["apple"]
       ],
-      "description": "Making apple beer goes back to ancestral tradition. The Celts drink it in abundance during their harvest festivals. All we have done is extend the pleasure to the present day by adding the juice of several varieties of apples to our delicious lambic. The tasting experience, which is quite exceptional, combines the sweetness of cider with the sourness characteristic of lambic. The Americans are crazy about it, which is why they say, \"An apple a day keeps the doctor away\".",
+      "description": "Making apple beer goes back to ancestral tradition. The Celts drink it in abundance during their harvest festivals. All we have done is extend the pleasure to the present day by adding the juice of several varieties of apples to our delicious lambic. The tasting experience, which is quite exceptional, combines the sweetness of cider with the sourness characteristic of lambic. ",
       "imagesrc": "https://img.saveur-biere.com/img/p/102-42244.jpg",
       "id": 111
     },
@@ -883,7 +883,7 @@
         ["bitterness", 0.1],
         ["cherry"]
       ],
-      "description": "The gnomes love Achouffe beers and the juicy cherries which grow in their magical land. Every year they gather and store them in the attics at the brewery. One day, after an abundant season, the floor gave way under the weight of the harvest, and some cherries fell into the Mc CHOUFFE brewing below. Impish as ever, the gnomes kept quiet about the incident. Surprised to discover a glowing, ruby-tinted beer with a fruity taste, the master brewer decided to bottle it up. Enjoy Cherry CHOUFFE carefully to avoid staining your beard and always drink it in delightful company.",
+      "description": "The gnomes love Achouffe beers and the juicy cherries which grow in their magical land. Enjoy Cherry CHOUFFE carefully to avoid staining your beard and always drink it in delightful company.",
       "imagesrc": "https://chouffe.com/app/uploads/2018/08/BRUNE_Cherry_Chouffe_33cl-300x0-c-default.png",
       "id": 131
     },
@@ -919,7 +919,7 @@
         ["citrus"],
         ["fruity"]
       ],
-      "description": "The natural mix of Amstel beer and lemon water. Amstel Radler is doubly refreshing and contains 2% alcohol. Great for after sports or any other effort. - Amstel Radler in ofrece una fusión única entre el gran sabor de la cerveza Amstel, mezclada con zumo de limón natural, para crear una nueva experiencia de sabor.",
+      "description": "The natural mix of Amstel beer and lemon water. Amstel Radler is doubly refreshing and contains 2% alcohol.",
       "imagesrc": "https://www.fivestartrading-holland.eu/images/product_images/original_images/amstel%20radler%20citroen%200.png",
       "id": 151
     },
@@ -973,7 +973,7 @@
         ["apple"],
         ["fruity"]
       ],
-      "description": "The Somersby Apple Cider is made from fermented apple juice, with added apple juice, sugar and natural flavoring to give a crisp and delicious apple cider taste. It contains no artificial sweeteners, flavors or colourings.\n\nSomersby is Carlsberg Group's biggest selling cider and was among the world's fastest growing international ciders in 2014. It is currently avaiable in more than 50 markets around the world.\n\nIn recent years, cider has experienced a dramatic renaissance. Today, it is a very popular alternative to beer and wine, and a natural alternative to flavoured Ready-to-Drink products.\n",
+      "description": "The Somersby Apple Cider is made from fermented apple juice, with added apple juice, sugar and natural flavoring to give a crisp and delicious apple cider taste. It contains no artificial sweeteners, flavors or colourings.",
       "imagesrc": "https://toppng.com/uploads/preview/somersby-apple-cider-11563405365vvm1aoaakn.png",
       "id": 181
     },
@@ -1009,7 +1009,7 @@
         ["bitterness", 0.15],
         ["citrus"]
       ],
-      "description": "A classic Belgian 'white beer' from the Hainaut region in the southwest Belgium, near the French border. Top-fermented and bottle-conditioned, this is a clean, refreshing regional 'artisan' beer.\nPresents a light hazy yellow colour with citrus and coriander aromas and fairly subtle malt and hops on the palate. The finish is dry and satisfying. Hazy yellow golden colour. Lemon custard, lime zest, and delicate spice melange aromas. Well-balanced, a frothy entry leads to a dryish medium body of nuts, baked oranges, and slightly phenolic mineral flavors. Finishes with a metallic ore dust, salt, and dried lemon fade. This beer is certified as organic, also vegan.",
+      "description": "A classic Belgian 'white beer' from the Hainaut region in the southwest Belgium. Presents a light hazy yellow colour with citrus and coriander aromas and fairly subtle malt and hops on the palate. The finish is dry and satisfying. Hazy yellow golden colour. Lemon custard, lime zest, and delicate spice melange aromas. Well-balanced, a frothy entry leads to a dryish medium body of nuts, baked oranges, and slightly phenolic mineral flavors. Finishes with a metallic ore dust, salt, and dried lemon fade. ",
       "imagesrc": "https://brunehaut.com/wp-content/uploads/2017/09/blanche.png",
       "id": 201
     },
@@ -1026,7 +1026,7 @@
         ["bitterness", 0.19],
         ["herby"]
       ],
-      "description": "A classic Belgian blonde ale from the Hainaut region in the southwest Belgium, near the French border. Top-fermented and bottle-conditioned, this is a clean, refreshing regional 'artisan' beer.\nThis organic and gluten-free blonde ale presents a nice yeasty nose, long-lasting head and a spicy, earthy note on the palate.",
+      "description": "A classic Belgian blonde ale from the Hainaut region in the southwest Belgium. Top-fermented and bottle-conditioned, this is a clean, refreshing regional 'artisan' beer.\nThis organic and gluten-free blonde ale presents a nice yeasty nose, long-lasting head and a spicy, earthy note on the palate.",
       "imagesrc": "https://brunehaut.com/wp-content/uploads/2017/09/blonde.png",
       "id": 211
     },
@@ -1081,7 +1081,7 @@
         ["citrus"],
         ["sweet"]
       ],
-      "description": "And this time it is all about the beer, and the beer is awesome! Gone are the 200+ IBUs which brought grown men to tears! Our new Nanny State is 0.5% ABV and focuses on being a great drink as opposed to a great publicity ploy. This beer is now focussed on getting all that is good about BrewDog into a practically alcohol free format. It is a West Coast inspired pale ale with a difference! The beer has 45 IBUS and is brewed with centennial, amarillo, columbus, cascade and simcoe and intensively dry-hopped with centennial and amarillo. The backbone is provided by 8 different types of speciality malts with only 87 kilos of malt used in a 20HL batch (our Punk IPA uses 450 kilos in 20HL).",
+      "description": "And this time it is all about the beer, and the beer is awesome! Gone are the 200+ IBUs which brought grown men to tears! Our new Nanny State is 0.5% ABV and focuses on being a great drink as opposed to a great publicity ploy. This beer is now focussed on getting all that is good about BrewDog into a practically alcohol free format. It is a West Coast inspired pale ale with a difference!.",
       "imagesrc": "https://www.drankgigant.nl/media/catalog/product/cache/5302153a4b78cff75d07c130fe2dbf33/b/r/brewdog_nanny_state_33_cl.webp",
       "id":310
     },
