@@ -266,7 +266,13 @@ h1 {
 }
 
 .big {
-    font-size: max(12ch, 10vw);
+    font-size: max(10ch, 10vw);
+}
+
+@media (max-aspect-ratio: 1/1) {
+  .medium {
+    font-size: 2ch;
+  }
 }
 
 .logo {
