@@ -574,6 +574,7 @@ h1 {
     display: block;
     position: relative;
 }
+
 #customers {
     font-family: Arial, Helvetica, sans-serif;
     border-collapse: collapse;
@@ -587,11 +588,13 @@ h1 {
     width: 100px;
     height:100%;
     overflow: hidden;
+    table-layout: fixed;
 }
 
 #customers tr:nth-child(even){background-color: #ffc023;}
 
 #customers tr:hover {background-color: #ddd;}
+
 
 #customers th {
     padding-top: 12px;
@@ -599,6 +602,8 @@ h1 {
     text-align: left;
     background-color: #f28c64;
     color: white;
+    overflow: hidden;
+    table-layout: fixed;
 }
 
 .beer {
